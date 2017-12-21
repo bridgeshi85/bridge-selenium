@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Selenium CLO New Credit Card Suite" verbose="1">
+    <listeners>
+      <listener class-name="com.extrabux.listeners.ScreenshotListener" />
+    </listeners>
+    <parameter name="cloServer" value="dev-clo.extrabux.com" />
+    <test name="CLO New Credit Card Tests">
+      <classes>
+        <class name="com.extrabux.tests.clo.CloCreditCardTests">
+            <!-- <methods>
+                <include name="leaveAllFieldsBlank" />
+            </methods> -->
+        </class>
+      </classes>
+    </test>
+</suite> 

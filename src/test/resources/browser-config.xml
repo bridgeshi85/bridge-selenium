@@ -1,0 +1,9 @@
+<browserConfig>
+	<sauceUsername>dannypeb</sauceUsername>
+	<sauceAccessKey>150f9de8-1e41-429d-8c80-96ee5d1c2cce</sauceAccessKey>
+	<capability>
+		<platform>WIN8</platform>
+		<browser>firefox</browser>
+		<browserVersion>28</browserVersion>
+	</capability>
+</browserConfig>

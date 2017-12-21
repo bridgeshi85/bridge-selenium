@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Help Center Tests" verbose="1">
+	<!-- <listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners> -->
+	<!-- <parameter name="serverName" value="extrabux.com"/> -->
+	<parameter name="propertiesFileName" value="staging-test.properties" />
+	<!--  <parameter name="serverName" value="staging-current.extrabux.com"/>-->
+	<parameter name="useLanguage" value="zh-cn"/>
+	<test name="Help Center Tests">
+		<classes>
+			<class name="com.extrabux.tests.cn.ChinaHelpCenterTests" >
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Extrabux Union Pay Tests]">
+  <parameter name="propertiesFileName" value="staging-test.properties"/>
+  <parameter name="useLanguage" value="zh-cn"/>
+  <listeners>
+    <listener class-name="com.extrabux.listeners.ScreenshotListener"/>
+  </listeners>
+  <test name="Union Pay Tests">
+    <classes>
+      <class name="com.extrabux.tests.cn.ChinaPromotionTests">
+        <methods>
+          <include name="bindUnionCard"/>
+        </methods>
+      </class> <!-- com.extrabux.tests.cn.ChinaPromotionTests -->
+    </classes>
+  </test> <!-- Union Pay Tests -->
+</suite> <!-- Failed suite [Extrabux Union Pay Tests] -->

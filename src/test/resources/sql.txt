@@ -1,0 +1,39 @@
+SELECT DATE(`date`.dd) AS `date`,cashback_rates.merchant_id,cashback_rates.normal_cashback,cashback_rates.vip_cashback,cashback_rates.commission_rate FROM
+(
+SELECT vip_cashback.*,normal.normal_cashback,normal.normal_start_date,normal.normal_end_date FROM (
+SELECT merchant_commission_rate.commission_rate,
+cashback_rates.merchant_id,cashback_rates.percent AS vip_cashback ,
+cashback_rates.start_date AS vip_start_date,cashback_rates.end_date AS vip_end_date FROM extrabux.cashback_rates 
+INNER JOIN
+extrabux.merchant_commission_rate
+ON cashback_rates.merchant_id = merchant_commission_rate.merchant_id
+WHERE attribute = 'Vip' AND cashback_rates.`percent_of_commission` = 0
+) AS vip_cashback
+LEFT JOIN 
+(
+SELECT merchant_id,
+percent AS normal_cashback,
+start_date AS normal_start_date,end_date AS normal_end_date FROM extrabux.cashback_rates 
+WHERE  attribute = 'NORMAL' AND cashback_rates.`percent_of_commission` = 0
+) AS normal
+ON (vip_cashback.merchant_id = normal.merchant_id
+AND vip_cashback.vip_start_date < normal.normal_end_date
+AND vip_cashback.vip_end_date > normal.normal_start_date)
+) AS cashback_rates
+INNER JOIN
+(
+SELECT DISTINCT(`date`) AS dd FROM extrabux.purchases
+WHERE `date` BETWEEN DATE_SUB(CURDATE(), INTERVAL 2 DAY) AND NOW()
+GROUP BY DATE(`date`)
+) AS `date`
+ON `date`.dd BETWEEN cashback_rates.vip_start_date AND cashback_rates.vip_end_date
+AND `date`.dd BETWEEN cashback_rates.normal_start_date AND cashback_rates.normal_end_date
+WHERE cashback_rates.normal_cashback >= cashback_rates.commission_rate
+AND cashback_rates.vip_cashback >= cashback_rates.normal_cashback
+AND commission_rate > 0
+OR 
+(
+cashback_rates.vip_cashback > cashback_rates.commission_rate
+AND commission_rate > 0
+)
+GROUP BY merchant_id,`date`

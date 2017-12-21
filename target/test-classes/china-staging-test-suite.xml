@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Integration Test Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+	<!--  <parameter name="serverName" value="staging-current.ebates.cn"/>
+	<parameter name="useLanguage" value="zh-cn"/>-->
+	<parameter name="promotionBox" value="false"/>
+	<parameter name="propertiesFileName" value="staging-test.properties" />
+	<parameter name="consoleErrorLog" value="true"/>
+	<!-- <parameter name="runOnSaucelabs" value="true"/> -->
+	<suite-files>
+		<suite-file path="china-login-suite.xml" />
+		<suite-file path="china-signup-suite.xml" />
+		<suite-file path="china-ticket-suite.xml" />
+		<suite-file path="china-account-suite.xml" />
+		<suite-file path="china-search-suite.xml" />
+		<suite-file path="china-cashout-suite.xml" />
+		<suite-file path="china-stores-list-suite.xml" />
+		<suite-file path="china-deals-test-suite.xml" />
+		<suite-file path="china-promotion-test-suite.xml" />
+		<suite-file path="china-homepage-suite.xml" />
+		<suite-file path="china-vip-suite.xml" />
+		<suite-file path="china-help-center-suite.xml" />
+		<suite-file path="china-favourite-test-suite.xml" />
+		<suite-file path="api-test-suite.xml" />
+	</suite-files>
+</suite>

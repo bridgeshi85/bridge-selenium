@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux CMBC Tests" verbose="1">
+	<!--  <listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>-->
+	<!--  <parameter name="serverName" value="www.extrabux.com"/>
+	<parameter name="propertiesFileName" value="staging-test.properties" />-->
+	<test name="CMBC Tests">
+		<classes>
+			<class name="com.extrabux.tests.cn.bi.CMBCReport" >
+			</class>
+		</classes>
+	</test>
+</suite>

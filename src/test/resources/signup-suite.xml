@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Selenium Sign Up Tests" verbose="1">
+<!-- 	<listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners> -->
+	<!-- <parameter name="serverName" value="staging-current.extrabux.com"/> -->
+	<test name="Sign Up Tests">
+		<classes>
+			<class name="com.extrabux.tests.SignUpTests" />
+		</classes>
+	</test>
+</suite>

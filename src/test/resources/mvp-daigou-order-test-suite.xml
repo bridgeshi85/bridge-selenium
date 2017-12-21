@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MVP Daigou Order Test Suite" verbose="1">
+	 <listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+   	<parameter name="allBrowsers" value="false"/>
+   	<parameter name="serverName" value="qa-haitao.extrabux.com"/> 
+   	<parameter name="propertiesFileName" value="mvp-daigou-staging.properties" />
+	<!-- <parameter name="serverName" value="staging-current.extrabux.com"/> -->
+	<parameter name="useLanguage" value="zh-cn"/>
+	<test name="Mvp Order Tests">
+		<classes>
+			<class name="com.extrabux.tests.cn.mvp.PurchaseTests" >
+				<!--  <methods>
+					<include name="addOrderWithMultipleItems"/>
+				</methods>-->
+			</class>
+		</classes>
+	</test>
+</suite>

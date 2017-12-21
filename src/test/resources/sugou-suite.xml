@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Selenium Daigou Tests" verbose="1">
+    <listeners>
+      <listener class-name="com.extrabux.listeners.ScreenshotListener" />
+    </listeners>
+    <parameter name="daigouServer" value="dev-sugou.extrabux.com" />
+    <suite-files>
+		<suite-file path="sugou-cart-summary-suite.xml" />
+		<suite-file path="sugou-credit-card-suite.xml" />
+		<suite-file path="sugou-product-info-suite.xml" />
+        <suite-file path="sugou-producturl-input-suite.xml" />
+        <suite-file path="sugou-purchase-suite.xml" />
+        <suite-file path="sugou-purchase-preview-suite.xml" />
+        <suite-file path="sugou-shipping-address-suite.xml" />
+        <suite-file path="sugou-member-login-suite.xml" />
+        <suite-file path="sugou-deep-linking-suite.xml" />
+	   </suite-files>
+</suite> 

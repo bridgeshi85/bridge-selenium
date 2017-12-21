@@ -1,0 +1,12 @@
+SELECT old_system.order_id,old_system.purchase_id,old_system.old_transactions,new_system.new_transactions,old_system.date1,new_system.date FROM
+(
+SELECT COUNT(*) AS old_transactions,transactions.purchase_id,DATE(transactions.date) as date,purchases.order_id,max(transactions.created) as date1 FROM `extrabux`.transactions LEFT JOIN `extrabux`.purchases ON transactions.purchase_id = purchases.id
+WHERE is_deleted = 0 AND DATE(purchases.date) >= '2017-10-01'
+and state = 'Confirmed'
+GROUP BY purchase_id
+) AS old_system
+INNER JOIN (SELECT COUNT(*) AS new_transactions,transactions_general.order_id,max(transactions_general.`created_at`) as date FROM `extrabux`.`transactions_general`
+WHERE DATE(transactions_general.order_time) >= '2017-10-01'
+and network_id = 23
+GROUP BY order_id) AS new_system
+ON old_system.order_id = new_system.order_id

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Selenium USC Tests" verbose="1">
+	<listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+	<!-- <parameter name="serverName" value="staging-usc.extrabux.com"/> -->
+    <!-- <parameter name="allBrowsers" value="true"/> -->
+	<test name="USC Tests">
+		<classes>
+			<class name="com.extrabux.tests.usc.UscCheckoutTest" />
+		</classes>
+	</test>
+</suite>

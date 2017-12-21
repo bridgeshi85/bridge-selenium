@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Selenium Sugou Cart Restoration Tests" verbose="1">
+    <listeners>
+      <listener class-name="com.extrabux.listeners.ScreenshotListener" />
+    </listeners>
+    <parameter name="daigouServer" value="qa-sugou.extrabux.com" />
+    <test name="Sugou Cart Restoration Tests">
+      <classes>
+        <class name="com.extrabux.tests.daigou.CartRestorationTests">
+          <!-- <methods>
+            <include name="restoreOneItem" />
+          </methods> -->
+        </class>
+      </classes>
+    </test>
+</suite> 

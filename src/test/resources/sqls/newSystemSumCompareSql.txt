@@ -1,0 +1,15 @@
+SELECT transactions_sum.*,purchases_general.sales,purchases_general.commission FROM (
+SELECT a.purchase_id,IF(a.currency='USD',a.sales,ROUND(a.sales*currency_conversions.conversion_factor)) AS sales,
+IF(a.currency='USD',a.commission,ROUND(a.commission*currency_conversions.conversion_factor)) AS commissiona FROM
+(SELECT SUM(transactions_general.sales) AS sales,SUM(transactions_general.commission) AS commission,purchase_id,transactions_general.currency,DATE(transactions_general.order_time) AS `date` FROM `extrabux`.transactions_general
+left join purchases_general
+on transactions_general.purchase_id = purchases_general.id
+WHERE DATE(transactions_general.created_at) >= '2017-10-01'
+AND network_id = 23
+AND purchase_id IS NOT NULL
+GROUP BY purchase_id) AS a
+LEFT JOIN `extrabux`.`currency_conversions`
+ON a.currency = `extrabux`.currency_conversions.from_currency
+AND a.date = DATE(currency_conversions.created)) AS transactions_sum
+INNER JOIN `extrabux`.purchases_general
+ON transactions_sum.purchase_id = purchases_general.id

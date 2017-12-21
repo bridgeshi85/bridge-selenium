@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Integration Test Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+	<!-- <parameter name="serverName" value="staging-current.extrabux.com"/> -->
+	<!-- <parameter name="runOnSaucelabs" value="true"/> -->
+	<suite-files>
+		<suite-file path="login-suite.xml" />
+		<suite-file path="signup-suite.xml" />
+		<suite-file path="ticket-suite.xml" />
+	</suite-files>
+</suite>

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Commissions Tests" verbose="1">
+	<!--  <listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>-->
+	<!--  <parameter name="serverName" value="www.extrabux.com"/>
+	<parameter name="propertiesFileName" value="staging-test.properties" />-->
+	<test name="Commission Tests">
+		<classes>
+			<class name="com.extrabux.tests.cn.bi.VipRateAlert" >
+			</class>
+		</classes>
+	</test>
+</suite>

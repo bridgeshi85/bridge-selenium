@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" total="4" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="72248" started-at="2017-11-03T08:24:11Z" finished-at="2017-11-03T08:25:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="72248" started-at="2017-11-03T08:24:11Z" finished-at="2017-11-03T08:25:23Z">
+      <class name="com.extrabux.tests.cn.bi.TransactionCheck">
+        <test-method status="PASS" signature="onStart(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="onStart" is-config="true" duration-ms="8" started-at="2017-11-03T16:24:11Z" finished-at="2017-11-03T16:24:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@515c6049]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onStart -->
+        <test-method status="PASS" signature="loadPropertiesConfig()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="loadPropertiesConfig" is-config="true" duration-ms="122" started-at="2017-11-03T16:24:11Z" depends-on-methods="com.extrabux.tests.BaseTest.getPropertiesFileName" finished-at="2017-11-03T16:24:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPropertiesConfig -->
+        <test-method status="PASS" signature="getPropertiesFileName(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="getPropertiesFileName" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:11Z" finished-at="2017-11-03T16:24:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@515c6049]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPropertiesFileName -->
+        <test-method status="PASS" signature="getServerName(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="getServerName" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:11Z" finished-at="2017-11-03T16:24:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@515c6049]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getServerName -->
+        <test-method status="PASS" signature="getBrowserType(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="getBrowserType" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:11Z" finished-at="2017-11-03T16:24:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@515c6049]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowserType -->
+        <test-method status="PASS" signature="setIntialLanguage(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="setIntialLanguage" is-config="true" duration-ms="59" started-at="2017-11-03T16:24:11Z" depends-on-methods="com.extrabux.tests.BaseTest.getBrowserType" finished-at="2017-11-03T16:24:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@515c6049]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setIntialLanguage -->
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="logTestStart" is-config="true" duration-ms="2" started-at="2017-11-03T16:24:11Z" finished-at="2017-11-03T16:24:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.cn.bi.TransactionCheck.newTransactionPurchaseSalesCompare() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStart -->
+        <test-method status="PASS" signature="clearResult()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="clearResult" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:11Z" finished-at="2017-11-03T16:24:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearResult -->
+        <test-method status="FAIL" signature="newTransactionPurchaseSalesCompare()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="newTransactionPurchaseSalesCompare" duration-ms="4519" started-at="2017-11-03T16:24:11Z" finished-at="2017-11-03T16:24:15Z">
+          <exception class="java.sql.SQLException">
+            <message>
+              <![CDATA[No database selected]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLException: No database selected
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4237)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4169)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2617)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2778)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2825)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2156)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2323)
+	at com.extrabux.util.DBUtil.getNewSumCompare(DBUtil.java:576)
+	at com.extrabux.tests.cn.bi.TransactionCheck.newTransactionPurchaseSalesCompare(TransactionCheck.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTransactionPurchaseSalesCompare -->
+        <test-method status="PASS" signature="generateReportFile(org.testng.ITestResult)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="generateReportFile" is-config="true" duration-ms="2" started-at="2017-11-03T16:24:15Z" finished-at="2017-11-03T16:24:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newTransactionPurchaseSalesCompare status=FAILURE method=TransactionCheck.newTransactionPurchaseSalesCompare()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReportFile -->
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="logTestStart" is-config="true" duration-ms="1" started-at="2017-11-03T16:24:15Z" finished-at="2017-11-03T16:24:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.cn.bi.TransactionCheck.purchasesCommissionCompare() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStart -->
+        <test-method status="PASS" signature="logTestFinish(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="logTestFinish" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:15Z" finished-at="2017-11-03T16:24:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.cn.bi.TransactionCheck.newTransactionPurchaseSalesCompare() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestFinish -->
+        <test-method status="PASS" signature="clearResult()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="clearResult" is-config="true" duration-ms="2" started-at="2017-11-03T16:24:15Z" finished-at="2017-11-03T16:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearResult -->
+        <test-method status="FAIL" signature="purchasesCommissionCompare()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="purchasesCommissionCompare" duration-ms="4671" started-at="2017-11-03T16:24:15Z" finished-at="2017-11-03T16:24:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[purchase commission发现不一致 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: purchase commission发现不一致 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.extrabux.tests.cn.bi.TransactionCheck.purchasesCommissionCompare(TransactionCheck.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchasesCommissionCompare -->
+        <test-method status="PASS" signature="generateReportFile(org.testng.ITestResult)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="generateReportFile" is-config="true" duration-ms="1" started-at="2017-11-03T16:24:20Z" finished-at="2017-11-03T16:24:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=purchasesCommissionCompare status=FAILURE method=TransactionCheck.purchasesCommissionCompare()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReportFile -->
+        <test-method status="PASS" signature="logTestFinish(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="logTestFinish" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:20Z" finished-at="2017-11-03T16:24:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.cn.bi.TransactionCheck.purchasesCommissionCompare() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestFinish -->
+        <test-method status="PASS" signature="clearResult()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="clearResult" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:20Z" finished-at="2017-11-03T16:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearResult -->
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="logTestStart" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:20Z" finished-at="2017-11-03T16:24:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.cn.bi.TransactionCheck.purchasesCountCompare() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStart -->
+        <test-method status="FAIL" signature="purchasesCountCompare()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="purchasesCountCompare" duration-ms="21253" started-at="2017-11-03T16:24:20Z" finished-at="2017-11-03T16:24:41Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[purchase count数量发现不一致 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: purchase count数量发现不一致 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.extrabux.tests.cn.bi.TransactionCheck.purchasesCountCompare(TransactionCheck.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchasesCountCompare -->
+        <test-method status="PASS" signature="generateReportFile(org.testng.ITestResult)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="generateReportFile" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:41Z" finished-at="2017-11-03T16:24:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=purchasesCountCompare status=FAILURE method=TransactionCheck.purchasesCountCompare()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReportFile -->
+        <test-method status="PASS" signature="logTestFinish(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="logTestFinish" is-config="true" duration-ms="1" started-at="2017-11-03T16:24:41Z" finished-at="2017-11-03T16:24:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.cn.bi.TransactionCheck.purchasesCountCompare() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestFinish -->
+        <test-method status="FAIL" signature="transactionCountCompare()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="transactionCountCompare" duration-ms="41595" started-at="2017-11-03T16:24:41Z" finished-at="2017-11-03T16:25:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[transaction 数量发现不一致 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: transaction 数量发现不一致 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.extrabux.tests.cn.bi.TransactionCheck.transactionCountCompare(TransactionCheck.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transactionCountCompare -->
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="logTestStart" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:41Z" finished-at="2017-11-03T16:24:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.cn.bi.TransactionCheck.transactionCountCompare() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStart -->
+        <test-method status="PASS" signature="clearResult()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="clearResult" is-config="true" duration-ms="0" started-at="2017-11-03T16:24:41Z" finished-at="2017-11-03T16:24:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearResult -->
+        <test-method status="PASS" signature="generateReportFile(org.testng.ITestResult)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="generateReportFile" is-config="true" duration-ms="2" started-at="2017-11-03T16:25:23Z" finished-at="2017-11-03T16:25:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=transactionCountCompare status=FAILURE method=TransactionCheck.transactionCountCompare()[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReportFile -->
+        <test-method status="PASS" signature="logTestFinish(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.cn.bi.TransactionCheck@80503]" name="logTestFinish" is-config="true" duration-ms="0" started-at="2017-11-03T16:25:23Z" finished-at="2017-11-03T16:25:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.cn.bi.TransactionCheck.transactionCountCompare() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestFinish -->
+      </class> <!-- com.extrabux.tests.cn.bi.TransactionCheck -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

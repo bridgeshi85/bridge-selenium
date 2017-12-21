@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Extrabux Selenium Login Tests]">
+  <listeners>
+    <listener class-name="com.extrabux.listeners.ScreenshotListener"/>
+  </listeners>
+  <test name="Login Tests">
+    <classes>
+      <class name="com.extrabux.tests.LoginTests"/>
+    </classes>
+  </test> <!-- Login Tests -->
+  <test name="Login Tests(failed)">
+    <classes>
+      <class name="com.extrabux.tests.LoginTests">
+        <methods>
+          <include name="logTestStart"/>
+          <include name="setIntialLanguage"/>
+          <include name="loginSuccess" invocation-numbers="0"/>
+          <include name="logTestFinish"/>
+          <include name="loadPropertiesConfig"/>
+          <include name="getServerName"/>
+          <include name="getBrowserType"/>
+          <include name="getPropertiesFileName"/>
+        </methods>
+      </class> <!-- com.extrabux.tests.LoginTests -->
+    </classes>
+  </test> <!-- Login Tests(failed) -->
+</suite> <!-- Failed suite [Extrabux Selenium Login Tests] -->

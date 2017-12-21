@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Extrabux Tracking Ticket Tests]">
+  <listeners>
+    <listener class-name="com.extrabux.listeners.ScreenshotListener"/>
+  </listeners>
+  <test name="Ticket Tests">
+    <classes>
+      <class name="com.extrabux.tests.TrackingTicketTests"/>
+    </classes>
+  </test> <!-- Ticket Tests -->
+  <test name="Ticket Tests(failed)">
+    <classes>
+      <class name="com.extrabux.tests.TrackingTicketTests">
+        <methods>
+          <include name="testStoreTransferClick" invocation-numbers="0"/>
+          <include name="logTestStart"/>
+          <include name="setIntialLanguage"/>
+          <include name="logTestFinish"/>
+          <include name="loadPropertiesConfig"/>
+          <include name="getServerName"/>
+          <include name="getBrowserType"/>
+          <include name="getPropertiesFileName"/>
+        </methods>
+      </class> <!-- com.extrabux.tests.TrackingTicketTests -->
+    </classes>
+  </test> <!-- Ticket Tests(failed) -->
+</suite> <!-- Failed suite [Extrabux Tracking Ticket Tests] -->

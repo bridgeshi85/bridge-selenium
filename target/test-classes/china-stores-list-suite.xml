@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Stores List Test Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+	<!--  <parameter name="serverName" value="staging-current.extrabux.com"/>
+	<parameter name="useLanguage" value="zh-cn"/>
+	<parameter name="propertiesFileName" value="staging-test.properties" />
+	<parameter name="consoleErrorLog" value="true"/>
+	<parameter name="runOnSaucelabs" value="true"/> -->
+	<test name="Stores List Tests">
+		<classes>
+			<class name="com.extrabux.tests.cn.ChinaStoreListTests" >
+			    <!--  <methods>
+			        <include name="filterByAlipay"/>
+			    </methods>-->
+			</class>
+		</classes>
+	</test>
+</suite>

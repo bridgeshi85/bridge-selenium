@@ -1,0 +1,13 @@
+SELECT old_system.*,IFNULL(new_system.sales,'not existed') as sales,IFNULL(new_system.commission,'not existed') as commission,IFNULL(new_system.id,'not existed') as newid FROM
+(
+SELECT order_id,purchases.id,amount,commission FROM `extrabux`.purchases LEFT JOIN `extrabux`.merchants ON purchases.merchant_id = merchants.id
+where purchases.state = 'Confirmed'
+and merchants.network_id = 23
+and DATE(purchases.date) >= '2017-10-01'
+) AS old_system
+LEFT JOIN
+(
+SELECT sales,commission,purchases_general.id,order_id FROM `extrabux`.`purchases_general` left join `extrabux`.merchants ON purchases_general.merchant_id = merchants.id
+where merchants.network_id = 23
+) AS new_system
+on old_system.order_id = new_system.order_id

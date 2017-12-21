@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Extrabux Selenium Promotion Tests]">
+  <parameter name="propertiesFileName" value="staging-test.properties"/>
+  <parameter name="serverName" value="staging-wl-promotion.ebates.cn"/>
+  <parameter name="allBrowsers" value="false"/>
+  <parameter name="useLanguage" value="zh-cn"/>
+  <listeners>
+    <listener class-name="com.extrabux.listeners.ScreenshotListener"/>
+  </listeners>
+  <test name="Promotion Tests">
+    <classes>
+      <class name="com.extrabux.tests.cn.ChinaPromotionTests">
+        <methods>
+          <include name="bindUnionCard"/>
+        </methods>
+      </class> <!-- com.extrabux.tests.cn.ChinaPromotionTests -->
+    </classes>
+  </test> <!-- Promotion Tests -->
+</suite> <!-- Failed suite [Extrabux Selenium Promotion Tests] -->

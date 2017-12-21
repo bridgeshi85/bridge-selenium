@@ -1,0 +1,11 @@
+SELECT old_system.*,IFNULL(new_system.new_system_count, 0) as new_system_count FROM 
+(SELECT COUNT(*) AS old_system_count,DATE(purchases.`date`) AS date,merchant_id FROM `extrabux`.purchases LEFT JOIN `extrabux`.merchants ON purchases.merchant_id = merchants.id
+WHERE DATE(purchases.`date`) = CURDATE()
+GROUP BY DATE(purchases.`date`),merchant_id) AS old_system
+LEFT JOIN (
+SELECT COUNT(*) AS new_system_count,DATE(`order_time`) AS date,merchant_id FROM `extrabux`.`purchases_general` WHERE 
+DATE(order_time) = CURDATE()
+GROUP BY DATE(`order_time`),merchant_id)
+AS new_system
+ON old_system.merchant_id = new_system.merchant_id
+AND old_system.date = new_system.date

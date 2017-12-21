@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<!--[if lte IE 7 ]><html class="outdatedBrowsers" lang="zh"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="zh"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="zh"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><!--<![endif]--><head>
+        <link href="//extrabux-static.b0.upaiyun.com" rel="dns-prefetch nofollow" />
+        <link href="//www.googletagmanager.com" rel="dns-prefetch nofollow" />
+        <link href="//www.google-analytics.com" rel="dns-prefetch nofollow" />
+                <meta charset="utf-8" />
+<title>Ebates海淘返利网 - 海淘优惠更新超快的返利网</title><meta charset="UTF-8" />
+<meta content="Ebates海淘返利网是一家来自美国的专业海淘返利网站，专为国内海淘用户提供返利优惠信息、海淘返利商家信息、海淘攻略、购物返利指南等。用户只要注册Ebates海淘返利网就可轻松获得返利，尽享海淘省钱乐趣！" name="description" />
+<meta content="返利网,海淘网,海淘返利,返利平台,海淘网站" name="keywords" />
+
+<meta content="noindex,nofollow" name="robots" />
+<link href="//extrabux-static.b0.upaiyun.com/images/ebates.ico" rel="shortcut icon" />
+<link href="//extrabux-static.b0.upaiyun.com/dist/css/extrabux-common.4e87cfa4.css" type="text/css" rel="stylesheet" />
+<link href="//extrabux-static.b0.upaiyun.com/dist/css/extrabux-pages.a1bc4ee0.css" type="text/css" rel="stylesheet" />
+
+
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="//extrabux-static.b0.upaiyun.com/dist/css/extrabux-ie9.cdd6d4db.css"/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="//extrabux-static.b0.upaiyun.com/dist/css/extrabux-ie8.98e889f5.css"/>
+<![endif]-->
+
+<script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TQ8FPQ"></script><script>
+
+
+    var DATALAYER_NAME = 'dataLayer';
+        window[DATALAYER_NAME] = [];
+
+	// Used for generating absolute links to assets
+	if (!window.location.origin) { // Some browsers (mainly IE) does not have this property, so we need to build it manually...
+		window.location.origin = window.location.protocol + '//' + window.location.hostname + (window.location.port ? (':' + window.location.port) : '');
+	}
+	window.baseUrl = window.location.origin + '/';
+
+	// Used for various conditionals determining content to load
+    window.isSecure = (document.location.protocol == "https:");
+
+	// Indicates the language in which we believe content should be presented to the user
+	window.lang = 'zh';
+
+	// Indicates the country code we believe the user is in
+	window.countryCode = 'CN';
+    
+    // Indicates whether it is a chinese user
+    window.isChinese = 'true';
+
+	// This is the link the current user (if logged in) can provide to others for referral credit
+	window.myReferralLinkToShare = '';
+
+	// Simple boolean used in many places for toggling the exposed UI
+	window.isLoggedIn = false;
+
+    // Simple boolean used in many places for toggling the exposed UI
+    window.isMobile = false;
+
+    window.isAjax = false;
+    window.isCaptcha = false;
+
+	// Enable global popup
+	window.enableGlobalPopup = false;
+
+	// Indicates the page is a bridge page. When true we expect to skip loading GA.
+    window.isBridgePage = false;
+
+    window.extrabux = window.extrabux || {};
+    window.extrabux.page = {};
+    window.extrabux.cdn = '//' + 'extrabux-static.b0.upaiyun.com';
+    
+    // User
+    window.user = window.user || {};
+    window.user.id = 0;
+    window.user.isVip = false;
+    window.user.phone = false;
+
+    // Translations
+    window.translations = {
+        viewResultsIn: '查看所有{0}结果',
+        resultInCategory: '相关{0}',
+        merchants: '商家',
+        coupons: '优惠',
+        blogs: '攻略',
+        products: '商品',
+        searchPlaceholder: '搜索一个{0}',
+        addTo: '添加',
+        removeFrom: '移除',
+        unfavorite: "取消收藏",
+        addToFavorites: "添加收藏",
+        myFavorites: "我的收藏",
+        addStoreToFavorite: '已添加[storeName]到收藏',
+        removeStoreFromFavorite: '[storeName]已从收藏夹移除',
+        couponCode: '优惠券 代码：',
+        emailInvalidMsg: '哎呀，您是不是填错您的邮箱地址了？',
+        emailRequired: '请告诉我们怎样收取我们的返利！',
+        passwordRequired: '哎呀，您需要填一个密码来保护您的返利收益！',
+        emailRemoteMessage1: '好消息！&lt;b&gt;&lt;{0}&gt;&lt;\/b&gt;&lt;i&gt;已经&lt;\/i&gt;有了Ebates账号。',
+        emailRemoteMessage2: '登录',
+        passwordMin: "密码长度不能少于{0}位。",
+        passwordMax: "密码长度不能超过{0}位。",
+        codeInvalid: "可能是您的验证码已经过期或者您没有输入正确。",
+        thankYou: "谢谢",
+        validatorRequired: "请填写此项。",
+        validatorMaxLength: "请最多输入{0}个字符。",
+        validatorMinLength: "请至少输入{0}个字符。",
+        validatorInvalidEmail: "请提供一个有效的邮箱地址。",
+        validatorRequiredPassword: "哎哟，您忘记输入密码了！",
+        locatingPurchase: "我们在与STORE联系，追踪该笔订单的记录。",
+        pwConfirmMsg: "哎呀，貌似您的密码两次输的不一样嘛。",
+        validatorRequiredEmail10: "请告诉我们怎样收取我们的返利！",
+        validatorRequiredPassword10: "哎呀，您需要填一个密码来保护您的返利收益！",
+        validatorInvalidEmail10: "哎呀，您确认那是正确的？",
+        validatorRequiredEmail11: "您好像忘记提供您好友的邮箱地址了。",
+        validator: "",
+
+        // promotions
+        confirmDeleteCard: '确认移除卡片？',
+        failedToDeleteCard: '删除您的信用卡时出错，请重试一次。',
+        tooltipDeleteCard: '移除卡片',
+        visaPromoPendingReminder: '首次设置提现方式不是Visa卡，您将丧失Visa持卡人商家购物多享的1%返利的特权！',
+        visaPromoEligibleReminder: '对默认提取方式的任何更新，都将导致您丧失Visa持卡人商家购物多享的1%返利的特权！',
+        spdbPromoPendingReminder: '首次设置默认提现方式若不是浦发VISA EGO卡，您将丧失获得最高额外4%返利的特权。',
+        spdbPromoEligibleReminder: '若您修改默认浦发VISA EGO卡提现方式，将不能再获额外返利',
+
+        dummy: ''
+    };
+</script>
+<script>
+
+	// Push some variables into the dataLayer for Tag Manager
+	(function() {
+		var userId = null;
+        var userGroup = null;
+		var visitMetrics = {};
+		var purchaseMetrics = {};
+		var clickId = null;
+
+		
+		window.visitor = window.visitor || {};
+		window.visitor.userId = userId;
+		window.visitor.id = userId;
+		window.visitor.group = userGroup;
+		window.visitor.lang = window.lang;
+		window.visitor.countryCode = window.countryCode;
+		window.visitor.visitMetrics = visitMetrics;
+		window.visitor.purchaseMetrics = purchaseMetrics;
+		window.visitor.visitorType = visitMetrics.visitorType;
+		window.visitor.clickId = clickId;
+
+        window.isBridgePage = window.isBridgePage || {};
+        window.click = window.click || {};
+        window.click.id = clickId;
+
+		window[DATALAYER_NAME].push({
+			'visitor': window.visitor,
+            'isBridgePage': window.isBridgePage,
+            'click': window.click
+		});
+	})();
+</script>
+
+<link rel="canonical" href="https://www.ebates.cn/" />
+
+    </head>
+    <body class="zh geo-CN">
+
+        <!-- Google Tag Manager -->
+<noscript>
+	&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ8FPQ" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+</noscript>
+<script>
+
+	// DATALAYER_NAME (dataLayer) is defined in globals.phtml
+
+	(function(w,d,s,l,i){
+		w[l]=w[l]||[];
+
+		// Add custom dataLayer variables
+		w[l].push({
+			'page.location.host': window.location.host,
+			'app.src.branch': "master",
+			'app.src.revision': "b86cab0b353de5ce32b2f47dfe699db7ca8569b7",
+			'app.env': "staging",
+			'gtm.start': new Date().getTime(), event: 'gtm.js'
+		});
+
+		var f = d.getElementsByTagName(s)[0];
+		var j = d.createElement(s);
+		var dl = (l!='dataLayer') ? '&amp;l='+l : '';
+		j.async=true;
+		j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;
+		f.parentNode.insertBefore(j,f);
+
+	})( window, document, 'script', DATALAYER_NAME, 'GTM-TQ8FPQ');
+</script>
+<!-- End Google Tag Manager -->
+
+        <!-- Header Begin -->
+        
+<div class="how-to-use-ex">
+    <div class="model1200">
+        <div class="title">如何使用<h1>Ebates海淘网</h1></div>
+        <i class="icon-sprites icon-l-close-circle"></i>
+        <ul>
+            <li>
+                <i class="large-use-1"></i>
+                <h2>1. 一键注册</h2>
+                <p>轻松注册，全球优惠折扣不再错过</p>
+            </li>
+            <li>
+                <i class="large-use-2"></i>
+                <h2>2. 全球商家官网下单</h2>
+                <p>点击专属返利链接进入商家官网，<br />
+                    选择心仪宝贝下单支付</p>
+            </li>
+            <li>
+                <i class="large-use-3"></i>
+                <h2>3. 获得返利</h2>
+                <p>订单确认后，返利将自动添加至<br />
+                    Ebates账户</p>
+            </li>
+        </ul>
+        <a href="https://blog.ebates.cn">了解更多海淘返利攻略，买遍全球不是梦 <em>&gt;</em></a>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="header-landing" data-page="1" id="header-landing" style="top: 0px;">
+
+    <div class="model1200">
+
+        <div class="logo">
+            <a href="/"><i class="icon-sprites icon-l-logo-loading"></i></a>
+        </div>
+
+        <div class="navs">
+            <ul>
+                <li><a href="/stores">海淘商家</a></li>
+                <li><a href="/deals">海淘优惠</a></li>
+                <li class="navs-menu"><a>亚马逊 <em class="arrow-down"></em></a>
+                    <div class="navs-dropdown">
+                        <a href="/stores/amazon-com">美亚</a>
+                        <a href="/stores/amazon-jp">日亚</a>
+                        <a href="/stores/amazon-cn">中亚</a>
+                    </div>
+                </li>
+                <li class="highlight"><a href="/deals?category=exclusive">【EB独家优惠】</a></li>
+                <li><a href="/stores/all?ships_directly_to=cn&amp;filter=1">直邮中国                    </a></li>
+            </ul>
+        </div>
+
+
+        <div class="nav-right">
+
+            <div class="search-wrapper">
+                <form accept-charset="utf-8" method="get" action="/search" id="search-form">
+                    <div class="search">
+                        <span class="icon-header-search"></span>
+                        <input type="hidden" value="merchant" name="type" />
+                        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" aria-haspopup="true" aria-autocomplete="list" role="textbox" placeholder="搜索商家" value="" name="q" class="input-box ui-autocomplete-input blurred tt-input" id="search-input" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;" /><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Helvetica Neue&quot;,Helvetica,Tahoma,Arial,&quot;Microsoft YaHei&quot;,sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre><div class="search-autocomplete tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-data"></div><div class="tt-dataset tt-dataset-recentSearch"></div></div></span>
+                        <button value="" type="submit" class="search-button" id="search-form-image"><i class="icon-sprites icon-l-search"></i></button>
+                    </div>
+
+                </form>
+            </div>
+
+
+            <div class="login-box">
+                <a class="login-link" href="/users/login?return=%2F" rel="nofollow">登录</a>
+                <em></em>
+                <span>
+                    
+<a href="/connect/qq" rel="nofollow" class="qq-connect">
+    <i class="icon-sprites icon-l-qq"></i>
+</a>
+<a href="/connect/weibo" rel="nofollow" class="weibo-connect">
+    <i class="icon-sprites icon-l-weibo"></i>
+</a>
+<a href="/connect/alipay" rel="nofollow" class="alipay-express">
+    <i class="icon-sprites icon-l-alipay"></i>
+</a>
+                </span>
+            </div>
+
+            <a class="register-link" href="/users/register" rel="nofollow">免费注册送$5</a>
+        </div>
+
+    </div>
+
+</div>
+        <!-- Header End -->
+
+        <!-- Content Begin -->
+        <div class="" id="content" style="margin-top: 58px;">
+            
+<style>
+    #content{
+        width:100%;
+        margin-top:62px;
+    }
+</style>
+
+<div class="large-home large-loading">
+    <div class="model1200 guest-relative">
+        <div class="guest-wrapper" id="login-global-content">
+             
+                <div class="login-global on">
+
+                <div class="tabs clearfix on">
+                    <a class="tab-register active" href="javascript:;">免费注册<strong>送$5</strong></a><a class="tab-login" href="javascript:;">登录</a>
+                    
+                </div>
+
+                <!-- login box start -->
+                <div class="login-box">
+
+                    <h3></h3>
+                    <div class="messages"></div>
+
+                    <!-- login form start -->
+                    <form action="/users/login" method="post" class="form" id="login-form" novalidate="novalidate">
+                        <input type="hidden" value="/" name="return" />
+                        <div class="group group-email">
+                            <input type="text" placeholder="输入邮箱/手机号" class="text-input" name="email" id="email" />
+                        </div>
+                        <div class="group group-password">
+                            <input type="password" placeholder="输入密码" class="text-input" name="password" id="password" />
+                        </div>
+                        <div class="group group-captcha">
+                            <input type="text" maxlength="6" placeholder="输入验证码" class="text-input" autocomplete="off" name="captcha" id="captcha" />
+                        </div>
+                        <div class="group-text">
+                            <span class="r"><a href="javascript:;" class="link-login-phone">手机号快速登录</a></span>
+                            <a href="/password/reset">忘记密码？</a>
+                        </div><div class="group group-btn">
+                            <input type="submit" class="submit" value="登录" />
+                        </div>
+                        
+                    </form>
+                    <!-- login form end -->
+
+                    <!-- login phone form start -->
+                    <form action="/users/login" method="post" class="form off" id="login-phone-form">
+                        <input type="hidden" value="/" name="return" />
+                        <input type="hidden" value="true" name="login-phone" />
+                        <div class="group group-phone">
+                            <div class="l"><input type="text" placeholder="输入手机号" maxlength="11" class="text-input" name="phone" id="phone" /></div>
+                            <div class="r"><input type="button" class="button btn-send-phone-code" value="发送动态码" /></div>
+                        </div>
+                        <div class="group">
+                            <input type="text" placeholder="输入动态码" maxlength="6" class="text-input" name="password" id="password" />
+                        </div>
+                        <div class="group group-captcha">
+                            <input type="text" maxlength="6" placeholder="输入验证码" class="text-input" autocomplete="off" name="captcha" id="captcha" />
+                        </div>
+                        <div class="group group-btn">
+                            <input type="submit" class="submit" value="登录" />
+                        </div>
+                        <div class="group-text">
+                            <span class="r"><a href="javascript:;" class="link-login-email">使用邮箱登录</a></span>
+                            <a href="/password/reset">忘记密码？</a>
+                        </div>
+                    </form>
+                    <!-- login phone form end -->
+
+                    <div class="society">
+                        <a href="/connect/qq" rel="nofollow" class="qq-connect"><i class="icon-sprites icon-l-qq"></i> QQ登录</a>
+                        <a href="/connect/weibo" rel="nofollow" class="weibo-connect"><i class="icon-sprites icon-l-weibo"></i> 微博登录</a>
+                        <a href="/connect/alipay" rel="nofollow" class="alipay-express"><i class="icon-sprites icon-l-alipay"></i> 支付宝</a>
+                    </div>
+
+                    <div class="login-link">
+                        <a href="javascript:;">还没有帐号？去注册 &gt;&gt;</a>
+                    </div>
+
+                </div>
+                <!-- login box end -->
+
+
+                <!-- register box start -->
+                <div class="register-box on">
+
+                    <h3></h3>
+                    <div class="messages"></div>
+
+                    <!-- register form start -->
+                    <form action="/users/register" method="post" class="form off" id="register-form" novalidate="novalidate">
+                        <input type="hidden" value="85059e083557bc00" name="csrf" />
+                        <input type="hidden" value="/" name="return" />
+                        <div class="group group-email">
+                            <input type="text" placeholder="输入Email地址" class="text-input" autocomplete="off" name="email" id="email" />
+                        </div>
+                        <div class="group group-password">
+                            <input type="password" placeholder="输入密码" class="text-input" autocomplete="off" name="password" id="password" />
+                        </div>
+
+                        <div class="group group-captcha on">
+                            <input type="text" maxlength="6" placeholder="输入验证码" class="text-input" autocomplete="off" name="captcha" id="captcha" />
+                        <img src="/captcha?_r=0.21093683671444496" onclick="this.src='/captcha?_r=0.5176311239753382'" /></div>
+
+                        <div class="group-text">
+                            <label><input type="checkbox" class="ckb-friend-code" /> 我有(好友)推荐码</label>
+                            <span class="r"><a href="javascript:;" class="link-register-phone">手机号快速注册</a></span>
+                        </div>
+                        <div class="group group-friend-code off">
+                            <input type="text" placeholder="推荐码" class="text-input" autocomplete="off" name="referee_email" />
+                        </div>
+                        <div class="group group-btn">
+                            <input type="submit" class="submit" value="免费注册送$5" />
+                        </div>
+                    </form>
+                    <!-- register form end -->
+                    
+                    <!-- register phone form start -->
+                    <form action="/users/register" method="post" class="form" id="register-phone-form" novalidate="novalidate">
+                        <input type="hidden" value="85059e083557bc00" name="csrf" />
+                        <input type="hidden" value="/" name="return" />
+                        <input type="hidden" value="true" name="register-phone" />
+                        <div class="group group-phone">
+                            <div class="l"><input type="text" placeholder="输入手机号" maxlength="11" class="text-input able" name="phone" id="phone" /></div>
+                            <div class="r"><input type="button" class="button btn-send-phone-code disable " value="发送动态码" /></div>
+                        </div>
+                        <div class="group">
+                            <input type="text" placeholder="输入动态码" maxlength="6" class="text-input" name="password" id="password" />
+                        </div>
+                        <div class="group group-btn">
+                            <input type="submit" value="注册" class="submit" />
+                        </div>
+                        <div class="group-text">
+                            <span class="r"><a href="javascript:;" class="link-register-email">使用邮箱注册</a></span>
+                        </div>
+                    </form>
+                    <!-- register phone form end -->
+
+                    <div class="society">
+                        <a href="/connect/qq" rel="nofollow" class="qq-connect"><i class="icon-sprites icon-l-qq"></i> QQ登录</a>
+                        <a href="/connect/weibo" rel="nofollow" class="weibo-connect"><i class="icon-sprites icon-l-weibo"></i> 微博登录</a>
+                        <a href="/connect/alipay" rel="nofollow" class="alipay-express"><i class="icon-sprites icon-l-alipay"></i> 支付宝</a>
+                    </div>
+
+                    <div class="login-link">
+                        <a href="javascript:;">已有账号？去登录 &gt;&gt;</a>
+                    </div>
+
+                </div>
+                <!-- register box end -->
+
+            </div>
+             
+            </div>
+    </div>
+
+    <div class="hero-banner loading-banner">
+        <div data-ride="carousel" class="carousel slide carousel-fade" id="banner-carousel">
+    <div class="carousel-control-wrapper">
+        <a data-slide="prev" role="button" href="#banner-carousel" class="left carousel-control"><i class="icon-l-arrow-l"></i></a>
+        <a data-slide="next" role="button" href="#banner-carousel" class="right carousel-control"><i class="icon-l-arrow-r"></i></a>
+    </div>
+    <div class="carousel-indicators-wrapper">
+        <ol class="carousel-indicators">
+                            <li class="" data-slide-to="0" data-target="#banner-carousel"></li>
+                            <li class="" data-slide-to="1" data-target="#banner-carousel"></li>
+                            <li class="active" data-slide-to="2" data-target="#banner-carousel"></li>
+                            <li class="" data-slide-to="3" data-target="#banner-carousel"></li>
+                    </ol>
+    </div>
+    <div data-img="//extrabux-static.b0.upaiyun.com/images/banners/loadingpage/herobanner-1.jpg" data-dollar="5" role="listbox" class="carousel-inner">
+                <div style="background: rgb(233, 232, 225) none repeat scroll 0% 0%;" class="item">
+            <a href="javascript:void(0);">
+                <img width="1200" height="360" src="//extrabux-static.b0.upaiyun.com/images/banners/loadingpage/herobanner-1.jpg" data-original="//extrabux-static.b0.upaiyun.com/images/banners/loadingpage/herobanner-1.jpg" class="lazy-deffer" style="display: block;" />
+            </a>
+        <div class="text-box"><div class="text"><span class="button-gray">如何使用Ebates</span></div></div></div>
+                                                    <div style="background: #c3e2ea" class="item">
+                <a href="https://www.ebates.cn/help/intro" target="_blank">
+                    <img width="1200" height="360" src="//extrabux-static.b0.upaiyun.com/images/banners/what-is-extrabux.jpg" data-original="//extrabux-static.b0.upaiyun.com/images/banners/what-is-extrabux.jpg" alt="Extrabux是什么？" class="lazy-deffer" style="display: block;" />
+                </a>
+            </div>
+                                            <div style="background: #c3e2ea" class="item active">
+                <a href="https://blog.ebates.cn/2014/09/entry-tutorial/" target="_blank">
+                    <img width="1200" height="360" src="//extrabux-static.b0.upaiyun.com/images/banners/haitao123.jpg" data-original="//extrabux-static.b0.upaiyun.com/images/banners/haitao123.jpg" alt="海淘入门123" class="lazy-deffer" style="display: block;" />
+                </a>
+            </div>
+                                            <div style="background: #c3e2ea" class="item ">
+                <a href="https://blog.ebates.cn/haitao-tutorial/" target="_blank">
+                    <img width="1200" height="360" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" data-original="//extrabux-static.b0.upaiyun.com/images/banners/blog.jpg" alt="海淘攻略教程" class="lazy-deffer" />
+                </a>
+            </div>
+            </div>
+
+</div>
+    </div>
+
+
+    
+<div class="favirote-store model1200">
+    <div class="headline">
+        <div class="search-wrapper">
+            <form accept-charset="utf-8" method="get" action="/search" id="search-form">
+                <div class="search">
+                    <span class="icon-header-search"></span>
+                    <input type="hidden" value="merchant" name="type" />
+                    <input type="text" aria-haspopup="true" aria-autocomplete="list" role="textbox" placeholder="搜索海外商家" value="" name="q" class="input-box ui-autocomplete-input blurred" id="search-input" autocomplete="off" />
+                    <button value="" type="submit" class="search-button" id="search-form-image"><i class="icon-sprites icon-l-search"></i></button>
+                </div>
+
+            </form>
+        </div>
+        <h2>新人最爱的商家</h2>
+        <p>与全球2500多家知名商家/品牌官网直线合作，提供超高海淘返利，任何优惠不再错过</p>
+    </div>
+
+    <div data-ride="carousel" class="carousel slide carousels-box" id="favirote-store">
+
+        <div role="listbox" class="carousel-inner">
+
+                            <div class="item active">
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/amazon-jp">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_6375.jpg" alt="Amazon.co.jp (亚马逊日本)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_6375.jpg" style="display: block;" />
+                                        <span class="new-guide-info">
+                                            <span>最受国人欢迎的日本网站</span>
+                                            <strong>返利0%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/vitacost">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_2018.jpg" alt="Vitacost (简称VT)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_2018.jpg" style="display: block;" />
+                                        <span class="new-guide-info">
+                                            <span>主营母婴保健品，可直邮中国</span>
+                                            <strong>返利3.5%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/estee-lauder">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_5872.jpg" alt="Estee Lauder (雅诗兰黛)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_5872.jpg" style="display: block;" />
+                                        <span class="new-guide-info">
+                                            <span>让时光倒流的高端护肤品牌</span>
+                                            <strong>返利4%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/ralph-lauren">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_6123.jpg" alt="Ralph Lauren (拉尔夫·劳伦)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_6123.jpg" style="display: block;" />
+                                        <span class="new-guide-info">
+                                            <span>男人最爱的大马Polo衫</span>
+                                            <strong>返利4%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/chemist-warehouse">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_6536.jpg" alt="Chemist Warehouse优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span></span>
+                                            <strong>返利最高2%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/ashford">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_117.jpg" alt="Ashford优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span>test最受欢迎世界名表在线商城test</span>
+                                            <strong>返利3%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/gnc">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_6951.jpg" alt="GNC优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span></span>
+                                            <strong>返利最高9%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/walgreens">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_3.jpg" alt="Walgreens (沃尔格林)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span>美国最大药品食品母婴用品网站</span>
+                                            <strong>返利最高6%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                    </div>
+                            <div class="item ">
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/skinstore">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_305.jpg" alt="SkinStore (致美网)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span>国际顶级护肤品在线购物商城</span>
+                                            <strong>返利最高8%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/carters">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_6401.jpg" alt="Carter's (卡特)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span>美国白菜价婴童服饰专卖</span>
+                                            <strong>返利2%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/wal-mart">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_2021.jpg" alt="Walmart.com (沃尔玛)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span>天天低价的全球最大综合超市</span>
+                                            <strong>返利最高3%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/macys">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_1814.jpg" alt="Macys.com (梅西百货)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span>全美最大的平价百货</span>
+                                            <strong>返利2%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/joes-new-balance-outlet">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_6292.jpg" alt="Joe's New Balance Outlet (新百伦折扣店)优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span>引领炫彩运动，人人都是跑男
+</span>
+                                            <strong>返利4%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                            <div class="box-panel">
+                            <div class="box">
+                                <a target="_blank" href="/stores/saks-fifth-avenue-au">
+                                    <img width="290" height="152" class="lazy" data-original="//extrabux-static.b0.upaiyun.com/images/large/new-guide/merchantimage_big_6976.jpg" alt="Saks Fifth Avenue优惠码及折扣" src="//extrabux-static.b0.upaiyun.com/images/blank.gif" />
+                                        <span class="new-guide-info">
+                                            <span></span>
+                                            <strong>返利8%</strong>
+                                        </span>
+                                </a>
+
+                            </div>
+                        </div>
+                                    </div>
+            
+        </div>
+
+        <a data-slide="prev" role="button" href="#favirote-store" class="left carousel-control"><i class="icon-sprites icon-l-arrow-sl"></i></a>
+        <a data-slide="next" role="button" href="#favirote-store" class="right carousel-control"><i class="icon-sprites icon-l-arrow-sr"></i></a>
+
+    </div>
+</div>
+
+
+
+
+    <div class="bg-full">
+        <div class="model1200 brands">
+            <div class="headline">
+    <a href="/help/intro">了解Ebates <em>&gt;</em></a>
+    <h2>超2500家海外品牌直线合作</h2>
+    <p>万事达、VISA等卡组织官方合作伙伴，相关海淘优惠信息最先知晓</p>
+</div>
+<div class="brands-list">
+    <p>与亚马逊、雅诗兰黛、耐克等全球知名商家/品牌官网直线合作，提供独家专享优惠</p>
+    <ul>
+        <li>
+            <a href="/stores/amazon-com"><i class="large-logo-amazon">amazon</i></a>
+        </li>
+        <li>
+            <a href="/stores/ebay"><i class="large-logo-ebay">ebay</i></a>
+        </li>
+        <li>
+            <a href="/stores/rakuten-global-market"><i class="large-logo-rakuten">Rakuten</i></a>
+        </li>
+        <li>
+            <a href="/stores/nike-store"><i class="large-logo-nike">Nike</i></a>
+        </li>
+        <li>
+            <a href="/stores/levis"><i class="large-logo-levis">Levi's</i></a>
+        </li>
+        <li>
+            <a href="/stores/lancome"><i class="large-logo-lancome">Lancome</i></a>
+        </li>
+        <li>
+            <a href="/stores/estee-lauder"><i class="large-logo-estee">esteeLauder</i></a>
+        </li>
+        <li>
+            <a href="/stores/macys"><i class="large-logo-macys">macy's</i></a>
+        </li>
+        <li>
+            <a href="/stores">查看更多海淘商家 <em>&gt;</em></a>
+        </li>
+    </ul>
+</div>
+<div class="visa">
+    <i class="large-logo-masterCard"></i>
+    <h3>万事达卡专享</h3>
+    <p>现金奖励$8 +VIP会员特权</p>
+    <a href="/mastercard">了解更多 <em>&gt;</em></a>
+</div>
+<div class="mastercard">
+    <i class="large-logo-cmbc"></i>
+    <h3>民生Ebates海淘联名信用卡</h3>
+    <p>开卡即送$20</p>
+    <a href="/cmbc">了解更多 <em>&gt;</em></a>
+</div>
+
+        </div>
+    </div>
+
+        <div data-interval="false" data-ride="carousel" class="carousel slide media-and-video" id="media-and-video">
+        <div class="carousel-indicators-wrapper">
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#media-and-video"></li>
+                <li data-slide-to="1" data-target="#media-and-video"></li>
+                <li data-slide-to="2" data-target="#media-and-video"></li>
+                <li data-slide-to="3" data-target="#media-and-video"></li>
+                <li data-slide-to="4" data-target="#media-and-video"></li>
+            </ol>
+        </div>
+        <div role="listbox" class="carousel-inner">
+            <div class="item active">
+                <a target="_blank" href="http://www.cbnweek.com/v/article?id=2688" class="illustration icon-l-media-1" rel="nofollow"></a>
+                <div class="item-detial">
+                    <strong>媒体报道</strong>
+                    <h2>Business Times</h2>
+                    <p class="sub"> Discount marketer sees revenue leap</p>
+                    <i class="icon-sprites icon-l-quotation-b"></i>
+                    <p class="cont">
+                        Ebates成立于1998年，主要通过发布广告、促销活动等方式进行销售活动，给客户提供返利。到2013年1月，Ebates已经与1500个商家合作，为1200万注册会员带去<span>超过1亿美元返利</span>。
+                    </p>
+                    <p class="pub"><i class="icon-sprites icon-l-quotation-a"></i></p>
+                </div>
+            </div>
+            <div class="item">
+                <a target="_blank" href="/help/press" class="illustration icon-l-media-2" rel="nofollow"></a>
+                <div class="item-detial">
+                    <strong>媒体报道</strong>
+                    <h2>第一财经周刊</h2>
+                    <p class="sub">Extrabux已经与近2500家美国电子商务网站有合作，其中200家是美国人最常使用的主流在线购物网站。</p>
+                    <i class="icon-sprites icon-l-quotation-b"></i>
+                    <p class="cont">进入电子商务高速增长的中国市场，美国返利网站Extrabux希望能为合作伙伴们带来更多的新用户和促成更多的交易。但在这个不一样的市场中，难度也是不一样的。</p>
+                    <p class="pub"><i class="icon-sprites icon-l-quotation-a"></i></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <a target="_blank" href="http://v.youku.com/v_show/id_XNDc4MTAwNTI4.html" class="illustration icon-l-media-3" rel="nofollow"></a>
+                <div class="item-detial">
+                    <i class="icon-sprites icon-l-quotation-b"></i>
+                    <p class="sub">Ebates在美国Today Show</p>
+                    <p class="cont">如果你还没用过Ebates那你就亏大了！它每年可以帮我<span>省$500</span>！Ebates上的商家应有尽有，通过Ebates购物之后还能拿到一定比例的返现。不仅如此，Ebates还会告诉你商家有哪些促销活动。你只需要坐在家里，就能收到返利！</p>
+                    <p class="pub"><i class="icon-sprites icon-l-quotation-a"></i></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <a target="_blank" href="http://v.youku.com/v_show/id_XNDc4MTAwNTI4.html" class="illustration icon-l-media-5" rel="nofollow"></a>
+                <div class="item-detial">
+                    <i class="icon-sprites icon-l-quotation-b"></i>
+                    <p class="sub">Ebates在美国CBS 《THE TALK》</p>
+                    <p class="cont">我最喜欢的购物网站就是Ebates了！它真是太棒了！Ebates到现在已经为用户带去了<span>1亿1千5百万美元的返利</span>！让我举个例子，这款奥林巴斯相机报价$299刀，通过Ebates购买，仅需$249！在Ebates上每一次购物都会收到现金返现，每年可以得到一笔可观的返现金额！</p>
+                    <p class="pub"><i class="icon-sprites icon-l-quotation-a"></i></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <a target="_blank" href="http://v.youku.com/v_show/id_XNDc4MDkxOTc2.html" class="illustration icon-l-media-4" rel="nofollow"></a>
+                <div class="item-detial">
+                    <i class="icon-sprites icon-l-quotation-b"></i>
+                    <p class="sub">Extrabux on NBC 4 New York News with Chinese Subtitles</p>
+                    <p class="cont"> 我已经通过这个网站累计拿到了<span>近千美元</span>的返利，而我所做的仅仅是通过Extrabux点击去商家下单购物。</p>
+                    <p class="pub"><em></em>我们的用户 Rebecca<i class="icon-sprites icon-l-quotation-a"></i></p>
+                </div>
+            </div>
+
+        </div>
+
+        <a data-slide="prev" role="button" href="#media-and-video" class="left carousel-control"><i class="icon-sprites icon-l-arrow-gray-l"></i></a>
+        <a data-slide="next" role="button" href="#media-and-video" class="right carousel-control"><i class="icon-sprites icon-l-arrow-gray-r"></i></a>
+
+    </div>
+
+
+    <div class="bg-full">
+        <div class="model1200 haitao-guest">
+            <div class="headline">
+                <a href="//blog.ebates.cn">所有海淘攻略 <em>&gt;</em></a>
+                <h2>海淘攻略</h2>
+                <p>零基础也能掌握自如的海淘/转运秘籍，买遍全球不是梦</p>
+            </div>
+            <ul>
+    </ul>        </div>
+    </div>
+
+
+
+            <div class="clear-height" style="clear: both; height:10px;"></div>
+        </div>
+        <!-- Content End -->
+
+        <!-- Footer Begin -->
+        
+
+<div id="promptToAddPurchase">
+    <div class="bubble">
+        <div class="imgWrapper">
+            <i class="icon-express"></i>
+        </div>
+        <div class="text">
+            <div>
+                已经在<span class="storeName">that store</span>下单了？                <a class="help" href="#">
+                    帮助                </a>
+            </div>
+            <div class="add-tracking-ticket">若订单符合商家返利要求，会在7天内显示在您帐户中。</div>
+        </div>
+        <a class="closeBubble" href="#close">
+            x
+        </a>
+    </div>
+</div>
+<footer id="v3Footer">
+            <div class="announcement">
+        <div class="model1200">
+            <em class="icon-announcement"></em>
+            <span>网站公告：</span>
+            <ul>
+                                                    <li>
+                        <a target="_blank" href="/help/notice#1969746">
+                            返利收款更便捷 - 盛付通                        </a>
+                                                <b>|</b>
+                                            </li>
+                                    <li>
+                        <a target="_blank" href="/help/notice#1971193">
+                            绑定手机SMS短信业务                        </a>
+                                            </li>
+                            </ul>
+            <span class="more"><a href="/help/notice">更多&gt;</a></span>
+        </div>
+    </div>
+        <div class="three-features model1200">
+        <ul>
+            <li class="store">
+                <span class="icon-footer-features-display-store"></span>
+                <h2>
+                    <a href="/stores">
+                        <b>2500+商家尽情海淘</b>
+                    </a>
+                    <em>中美欧日韩澳任你挑</em>
+                </h2>
+            </li>
+            <li class="tag">
+                <span class="icon-footer-features-display-tag"></span>
+                <h2>
+                    <a href="/deals">
+                        <b>返利优惠一步到位</b>
+                    </a>
+                    <em>优惠券加返利,一省到底</em>
+                </h2>
+            </li>
+            <li class="bag">
+                <span class="icon-footer-features-display-bag"></span>
+                <h2>
+                    <a href="//blog.ebates.cn">
+                        <b>轻松学海淘</b>
+                    </a>
+                    <em>百余攻略教你如何淘洋货</em>
+                </h2>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="four-sub-features model1200">
+        <div class="guide">
+            <ul>
+                <li><strong>了解Ebates</strong></li>
+                <li>
+                    <a href="/help/intro">Ebates是什么？</a>
+                </li>
+                <li>
+                    <a href="/help/how-ebates-works">使用教程</a> <span class="pipe"></span>
+                    <a href="/help/press">媒体报道</a>
+                </li>
+                <li>
+                    <a class="qq-chat" id="qq-chat-footer" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2NjkzMF83MjI3OF84MDAwNjY5MzBfMl8" target="_blank">
+                        <i class="icon-qq-chat"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stores">
+            <ul>
+                <li><strong>2500个海外商家</strong></li>
+                <li>
+                    <a href="/stores">全部海淘商家</a>
+                </li>
+                <li>
+                    <a href="/stores/all?ships_directly_to=cn">直邮中国商家</a> <span class="pipe"></span>
+                    <a href="/stores/all?payment_type=23&amp;filter=1">支持支付宝商家</a>
+                </li>
+                <li>
+                    <a href="/stores/all?payment_type=6">支持国卡商家</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="rebate">
+            <ul>
+                <li><strong>轻松拿返利</strong></li>
+                <li>
+                    <a href="/help/faq#922404">什么是购物返利？</a> <span class="pipe"></span>
+                    <a href="/help/faq#Payments">返利收款方式</a></li>
+                <li><a href="/help/tips">返利小贴士</a> <span class="pipe"></span>
+                    <a href="/extensions">购物返利浏览器插件</a>
+                    <a name="chrome"></a>
+                </li>
+                <li>
+                    <!-- this translation should be added a pair of tag '<b>' around the text '5美金奖励',like below:
+                    <a href="/help/faq#InviteFriends">邀請好友拿5美金奖励</a>
+                    -->
+                    <a href="/help/faq#InviteFriends">邀請好友拿<b>5美金奖励</b></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="follow">
+            <ul>
+                <li><strong>关注我们</strong></li>
+                <li>
+                    <a href="javascript:;" class="follow-text">
+                        新浪微博                        <div class="follow-tip weibo">
+                           <div>
+                               <h4>关注新浪微博</h4>
+                               <i class="icon-qrcode-weibo"></i>
+                           </div>
+                           <span></span>
+                        </div>
+                    </a>
+                </li><li>
+                    <a href="javascript:;" class="follow-text">
+                        官方微信                        <div class="follow-tip weixin-service">
+                            <div>
+                                <h4>关注微信服务号</h4>
+                                <i class="icon-qrcode-wechat"></i>
+                                <p>Ebates</p>
+                            </div>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="follow-text">
+                        微信订阅号                        <div class="follow-tip weixin-order">
+                            <div>
+                                <h4>关注微信订阅号</h4>
+                                <i class="icon-qrcode-wechat-daily"></i>
+                                <p>Ebates_haitao</p>
+                            </div>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bottom-footer friendly">
+        <ul class="languages">
+                        <li>
+                <a href="//staging-current.extrabux.com/locale?lang=en&amp;geo=US">United States (English)</a><b>|</b>
+            </li>
+            <li class="current">中国 (中文)<b>|</b></li>
+            <li>
+                <a href="//staging-current.extrabux.com/locale?lang=ko&amp;geo=KR">대한민국 (한국어)</a><b>|</b>
+            </li>
+            <li>
+                <a href="//staging-current.extrabux.com/locale?lang=ru&amp;geo=RU">Россия русский</a>
+            </li>
+        </ul>
+        <p class="clearfix">
+            <a class="noLink">友情链接：</a>
+            <a target="_blank" href="http://www.haitaozu.org/">海淘</a>
+            <a target="_blank" href="http://www.haitaobei.com/">海淘贝</a>
+            <a target="_blank" href="http://fenlei.iask.sina.com.cn/">爱问分类</a>
+            <a target="_blank" href="http://iask.sina.com.cn/c/152.html">爱问购物</a>
+            <a target="_blank" href="http://www.haitaozj.com/">海淘之家</a>
+            <a target="_blank" href="http://www.transrush.com/">转运四方</a>
+        </p>
+        <p>
+            <a href="/careers/">招贤纳士</a>
+            <a href="/help/contact">联系我们</a>
+            <a href="/help/terms">使用条件</a>
+            <a href="/help/privacy">隐私声明</a>
+        </p>
+        <br />
+        <address>© 2017  Ebates, Inc. </address>
+    </div>
+
+</footer>
+
+<div class="right-layout-v2 scroll-top-v2 scroll-hot-list" id="scroll-top-1">
+    <a target="_blank" class="shopping-cart icon-floating-layer-link-1" href="//blog.ebates.cn/2017/04/haitao-guide-must-see/">海淘入门</a>
+
+        <a class="tutorials" href="/help/how-ebates-works">使用教程</a>
+    <a target="_blank" class="haitao icon-floating-layer-link-2" href="/campaign/forwarder">海淘转运</a>
+
+    <div class="followus">
+
+        <a class="follow icon-floating-layer-link-4" href="javascript:;">关注我们</a>
+
+        <div class="icons">
+            <div class="icon-weibo">
+                <span class="ico icon-float-layer-weibo"></span>
+                <a target="_blank" href="http://www.weibo.com/extrabuxcom">
+                    <div class="panel">
+                        <h4>关注新浪微博</h4>
+                        <div><i class="icon-qrcode-weibo"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="icon-weixin">
+                <span class="ico icon-float-layer-wechat"></span>
+
+                <div class="panel">
+
+                    <div>
+                        <h4>关注微信服务号</h4>
+                        <div><i class="icon-qrcode-wechat"></i></div>
+                        <p>Extrabux</p>
+                    </div>
+
+                    <div class="follow-right">
+                        <h4>关注微信订阅号</h4>
+                        <div><i class="icon-qrcode-wechat-daily"></i></div>
+                        <p>Extrabux_haitao</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <a class="qq-chat icon-floating-layer-link-5" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2NjkzMF83MjI3OF84MDAwNjY5MzBfMl8" rel="nofollow" target="_blank">qq客服</a>
+    <a class="scrollto-top icon-float-layer-gotop" href="javascript:;">返回顶部</a>
+</div>
+
+<div class="right-layout-v2 scroll-top-v2 right-layout-small" id="scroll-top-2">
+
+    <div class="small-link-1">
+        <a target="_blank" class="shopping-cart icon-small-floating-layer-link-1" href="//blog.ebates.cn/2017/04/haitao-guide-must-see/">海淘入门</a>
+        <a target="_blank" class="shopping-cart icon-small-floating-layer-link-1-hover" href="//blog.ebates.cn/2017/04/haitao-guide-must-see/">海淘入门</a>
+    </div>
+
+    <div class="small-link-2">
+        <a target="_blank" class="haitao icon-small-floating-layer-link-2" href="/campaign/forwarder">海淘转运</a>
+        <a target="_blank" class="haitao icon-small-floating-layer-link-2-hover" href="/campaign/forwarder">海淘转运</a>
+    </div>
+
+    <div class="small-link-4">
+        <div class="followus">
+
+            <a class="follow icon-small-floating-layer-link-4" href="javascript:;">关注我们</a>
+            <a class="follow icon-small-floating-layer-link-4-hover" href="javascript:;">关注我们</a>
+
+            <div class="icons">
+                <div class="icon-weibo">
+                    <span class="ico icon-float-layer-weibo"></span>
+
+                    <a target="_blank" href="http://www.weibo.com/extrabuxcom">
+                        <div class="panel">
+                            <h4>关注新浪微博</h4>
+                            <div><i class="icon-qrcode-weibo"></i></div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="icon-weixin">
+                    <span class="ico icon-float-layer-wechat"></span>
+
+                    <div class="panel">
+
+                        <div>
+                            <h4>关注微信服务号</h4>
+                            <div><i class="icon-qrcode-wechat"></i></div>
+                            <p>Extrabux</p>
+                        </div>
+
+                        <div class="follow-right">
+                            <h4>关注微信订阅号</h4>
+                            <div><i class="icon-qrcode-wechat-daily"></i></div>
+                            <p>Extrabux_haitao</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="small-link-5">
+        <a class="qq-chat icon-small-floating-layer-link-5" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2NjkzMF83MjI3OF84MDAwNjY5MzBfMl8" target="_blank">qq客服</a>
+        <a class="qq-chat icon-small-floating-layer-link-5-hover" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2NjkzMF83MjI3OF84MDAwNjY5MzBfMl8" target="_blank">qq客服</a>
+    </div>
+
+    <div class="small-link-6">
+        <a class="scrollto-top icon-small-float-layer-gotop" href="javascript:;">返回顶部</a>
+        <a class="scrollto-top icon-small-float-layer-gotop-hover" href="javascript:;">返回顶部</a>
+    </div>
+</div>
+
+
+        <!-- Footer End -->
+        
+        <script src="//extrabux-static.b0.upaiyun.com/dist/js/extrabux.external.5a150162.js" type="text/javascript"></script>
+<script src="//extrabux-static.b0.upaiyun.com/dist/js/extrabux.main.27b6148b.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //&lt;!--
+    
+window.extrabux.page['login-register'] = {
+    csrf:'85059e083557bc00',
+    return:'/'
+};
+
+    //--&gt;
+</script>
+<script type="text/javascript">
+    //&lt;!--
+        $(function () {
+        require('es6-loading-large').init(window.extrabux.page['login-register']);
+    });    //--&gt;
+</script>
+<script type="text/javascript">
+    //&lt;!--
+        $(function() {
+        window.domInit.favoriteStar(window.translations.addStoreToFavorite, window.translations.removeStoreFromFavorite);
+        window.domInit.userControl();
+        window.domInit.orderInquiryNotAllowed(window.user.isVip);
+    });    //--&gt;
+</script>    
+
+</div><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div id="fancybox-bg-n" class="fancybox-bg"></div><div id="fancybox-bg-ne" class="fancybox-bg"></div><div id="fancybox-bg-e" class="fancybox-bg"></div><div id="fancybox-bg-se" class="fancybox-bg"></div><div id="fancybox-bg-s" class="fancybox-bg"></div><div id="fancybox-bg-sw" class="fancybox-bg"></div><div id="fancybox-bg-w" class="fancybox-bg"></div><div id="fancybox-bg-nw" class="fancybox-bg"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a id="fancybox-left" href="javascript:;"><span id="fancybox-left-ico" class="fancy-ico"></span></a><a id="fancybox-right" href="javascript:;"><span id="fancybox-right-ico" class="fancy-ico"></span></a></div></div><div id="whiteOverlay"></div><script type="text/javascript" id="">(function(){function d(a,c){var b=new RegExp("[?\x26]"+a.replace(/[\[\]]/ig,"\\$\x26")+"(\x3d([^\x26#]*)|\x26|#|$)");return(b=b.exec(c))&amp;&amp;b[2]?decodeURIComponent(b[2].replace(/\+/ig," ")):null}var b=[],c=0,e="promo_name",f="promo_id",g="promo_creative",h="promo_position";Array.prototype.slice.call(document.getElementsByTagName("a")).forEach(function(a){null===a.getAttribute("href")||void 0===a.getAttribute("href")||null===a.getAttribute("href").match(new RegExp(e,"ig"))&amp;&amp;null===a.getAttribute("href").match(new RegExp(f,
+"ig"))||(b[c]={},null!==a.getAttribute("href").match(new RegExp(e,"ig"))&amp;&amp;(b[c].name=d(e,a.getAttribute("href"))),null!==a.getAttribute("href").match(new RegExp(f,"ig"))&amp;&amp;(b[c].id=d(f,a.getAttribute("href"))),null!==a.getAttribute("href").match(new RegExp(h,"ig"))&amp;&amp;(b[c].position=d(h,a.getAttribute("href"))),null!==a.getAttribute("href").match(new RegExp(g,"ig"))&amp;&amp;(b[c].creative=d(g,a.getAttribute("href"))),c+=1)});0&lt;c&amp;&amp;dataLayer.push({event:"promotionView",ecommerce:{promoView:{promotions:b}}})})();</script></body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="1265" height="2370"></canvas></html>

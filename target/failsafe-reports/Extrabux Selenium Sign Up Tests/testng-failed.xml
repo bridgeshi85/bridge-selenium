@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Extrabux Selenium Sign Up Tests]">
+  <listeners>
+    <listener class-name="com.extrabux.listeners.ScreenshotListener"/>
+  </listeners>
+  <test name="Sign Up Tests">
+    <classes>
+      <class name="com.extrabux.tests.SignUpTests"/>
+    </classes>
+  </test> <!-- Sign Up Tests -->
+</suite> <!-- Failed suite [Extrabux Selenium Sign Up Tests] -->

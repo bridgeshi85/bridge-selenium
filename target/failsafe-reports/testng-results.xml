@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="3" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href="./Extrabux Selenium Login Tests/screenshots/loginSuccess.png">loginSuccess Screenshot</a> | ]]>
+    </line>
+    <line>
+      <![CDATA[<a href="./Extrabux Selenium Login Tests/html/loginSuccess.html">loginSuccess HTML Output</a> | ]]>
+    </line>
+    <line>
+      <![CDATA[<a href="./Extrabux Tracking Ticket Tests/screenshots/testStoreTransferClick.png">testStoreTransferClick Screenshot</a> | ]]>
+    </line>
+    <line>
+      <![CDATA[<a href="./Extrabux Tracking Ticket Tests/html/testStoreTransferClick.html">testStoreTransferClick HTML Output</a> | ]]>
+    </line>
+  </reporter-output>
+  <suite name="Extrabux Selenium Login Tests" duration-ms="27142" started-at="2017-10-13T09:11:05Z" finished-at="2017-10-13T09:11:32Z">
+    <groups>
+      <group name="production-test">
+        <method signature="LoginTests.loginSuccess(org.openqa.selenium.WebDriver)[pri:0, instance:com.extrabux.tests.LoginTests@5f2108b5]" name="loginSuccess" class="com.extrabux.tests.LoginTests"/>
+      </group> <!-- production-test -->
+    </groups>
+    <test name="Login Tests" duration-ms="27142" started-at="2017-10-13T09:11:05Z" finished-at="2017-10-13T09:11:32Z">
+      <class name="com.extrabux.tests.LoginTests">
+        <test-method status="PASS" signature="getBrowserType(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.LoginTests@5f2108b5]" name="getBrowserType" is-config="true" duration-ms="9" started-at="2017-10-13T17:11:05Z" finished-at="2017-10-13T17:11:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a07d605]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowserType -->
+        <test-method status="PASS" signature="getServerName(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.LoginTests@5f2108b5]" name="getServerName" is-config="true" duration-ms="1" started-at="2017-10-13T17:11:05Z" finished-at="2017-10-13T17:11:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a07d605]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getServerName -->
+        <test-method status="PASS" signature="getPropertiesFileName(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.LoginTests@5f2108b5]" name="getPropertiesFileName" is-config="true" duration-ms="0" started-at="2017-10-13T17:11:05Z" finished-at="2017-10-13T17:11:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a07d605]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPropertiesFileName -->
+        <test-method status="PASS" signature="loadPropertiesConfig()[pri:0, instance:com.extrabux.tests.LoginTests@5f2108b5]" name="loadPropertiesConfig" is-config="true" duration-ms="120" started-at="2017-10-13T17:11:05Z" depends-on-methods="com.extrabux.tests.BaseTest.getPropertiesFileName" finished-at="2017-10-13T17:11:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPropertiesConfig -->
+        <test-method status="PASS" signature="setIntialLanguage(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.LoginTests@5f2108b5]" name="setIntialLanguage" is-config="true" duration-ms="57" started-at="2017-10-13T17:11:05Z" depends-on-methods="com.extrabux.tests.BaseTest.getBrowserType" finished-at="2017-10-13T17:11:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a07d605]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setIntialLanguage -->
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.LoginTests@5f2108b5]" name="logTestStart" is-config="true" duration-ms="3" started-at="2017-10-13T17:11:07Z" finished-at="2017-10-13T17:11:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.LoginTests.loginSuccess(org.openqa.selenium.WebDriver) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStart -->
+        <test-method status="FAIL" signature="loginSuccess(org.openqa.selenium.WebDriver)[pri:0, instance:com.extrabux.tests.LoginTests@5f2108b5]" name="loginSuccess" duration-ms="23731" started-at="2017-10-13T17:11:07Z" data-provider="getWebDriver" finished-at="2017-10-13T17:11:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FirefoxDriver: firefox on MAC (null)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[currentPage title: Ebates海淘返利网 - 海淘优惠更新超快的返利网
+ currentPage url: https://staging-current.ebates.cn/
+timed out waiting for member to display. element was not found on current page (https://staging-current.ebates.cn/).  possible white page displayed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: currentPage title: Ebates海淘返利网 - 海淘优惠更新超快的返利网
+ currentPage url: https://staging-current.ebates.cn/
+timed out waiting for member to display. element was not found on current page (https://staging-current.ebates.cn/).  possible white page displayed
+	at com.extrabux.tests.LoginTests.loginSuccess(LoginTests.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href="./Extrabux Selenium Login Tests/screenshots/loginSuccess.png">loginSuccess Screenshot</a> | ]]>
+            </line>
+            <line>
+              <![CDATA[<a href="./Extrabux Selenium Login Tests/html/loginSuccess.html">loginSuccess HTML Output</a> | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSuccess -->
+        <test-method status="PASS" signature="logTestFinish(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.LoginTests@5f2108b5]" name="logTestFinish" is-config="true" duration-ms="1" started-at="2017-10-13T17:11:32Z" finished-at="2017-10-13T17:11:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.LoginTests.loginSuccess(org.openqa.selenium.WebDriver) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestFinish -->
+      </class> <!-- com.extrabux.tests.LoginTests -->
+    </test> <!-- Login Tests -->
+  </suite> <!-- Extrabux Selenium Login Tests -->
+  <suite name="Extrabux Selenium Sign Up Tests" duration-ms="9524" started-at="2017-10-13T09:11:32Z" finished-at="2017-10-13T09:11:42Z">
+    <groups>
+      <group name="production-test">
+        <method signature="SignUpTests.signUpSuccessNoReferral(org.openqa.selenium.WebDriver)[pri:0, instance:com.extrabux.tests.SignUpTests@2d928643]" name="signUpSuccessNoReferral" class="com.extrabux.tests.SignUpTests"/>
+      </group> <!-- production-test -->
+    </groups>
+    <test name="Sign Up Tests" duration-ms="9524" started-at="2017-10-13T09:11:32Z" finished-at="2017-10-13T09:11:42Z">
+      <class name="com.extrabux.tests.SignUpTests">
+        <test-method status="PASS" signature="loadPropertiesConfig()[pri:0, instance:com.extrabux.tests.SignUpTests@2d928643]" name="loadPropertiesConfig" is-config="true" duration-ms="9" started-at="2017-10-13T17:11:32Z" depends-on-methods="com.extrabux.tests.BaseTest.getPropertiesFileName" finished-at="2017-10-13T17:11:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPropertiesConfig -->
+        <test-method status="PASS" signature="getBrowserType(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.SignUpTests@2d928643]" name="getBrowserType" is-config="true" duration-ms="0" started-at="2017-10-13T17:11:32Z" finished-at="2017-10-13T17:11:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@74287ea3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowserType -->
+        <test-method status="PASS" signature="getServerName(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.SignUpTests@2d928643]" name="getServerName" is-config="true" duration-ms="0" started-at="2017-10-13T17:11:32Z" finished-at="2017-10-13T17:11:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@74287ea3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getServerName -->
+        <test-method status="PASS" signature="getPropertiesFileName(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.SignUpTests@2d928643]" name="getPropertiesFileName" is-config="true" duration-ms="0" started-at="2017-10-13T17:11:32Z" finished-at="2017-10-13T17:11:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@74287ea3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPropertiesFileName -->
+        <test-method status="PASS" signature="setIntialLanguage(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.SignUpTests@2d928643]" name="setIntialLanguage" is-config="true" duration-ms="3" started-at="2017-10-13T17:11:32Z" depends-on-methods="com.extrabux.tests.BaseTest.getBrowserType" finished-at="2017-10-13T17:11:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@74287ea3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setIntialLanguage -->
+        <test-method status="PASS" signature="signUpSuccessNoReferral(org.openqa.selenium.WebDriver)[pri:0, instance:com.extrabux.tests.SignUpTests@2d928643]" name="signUpSuccessNoReferral" duration-ms="7538" started-at="2017-10-13T17:11:34Z" data-provider="getWebDriver" finished-at="2017-10-13T17:11:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FirefoxDriver: firefox on MAC (null)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpSuccessNoReferral -->
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.SignUpTests@2d928643]" name="logTestStart" is-config="true" duration-ms="0" started-at="2017-10-13T17:11:34Z" finished-at="2017-10-13T17:11:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.SignUpTests.signUpSuccessNoReferral(org.openqa.selenium.WebDriver) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStart -->
+        <test-method status="PASS" signature="logTestFinish(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.SignUpTests@2d928643]" name="logTestFinish" is-config="true" duration-ms="0" started-at="2017-10-13T17:11:42Z" finished-at="2017-10-13T17:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.SignUpTests.signUpSuccessNoReferral(org.openqa.selenium.WebDriver) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestFinish -->
+      </class> <!-- com.extrabux.tests.SignUpTests -->
+    </test> <!-- Sign Up Tests -->
+  </suite> <!-- Extrabux Selenium Sign Up Tests -->
+  <suite name="Extrabux Tracking Ticket Tests" duration-ms="23284" started-at="2017-10-13T09:11:42Z" finished-at="2017-10-13T09:12:05Z">
+    <groups>
+      <group name="production-test">
+        <method signature="TrackingTicketTests.testStoreTransferClick(org.openqa.selenium.WebDriver)[pri:0, instance:com.extrabux.tests.TrackingTicketTests@617faa95]" name="testStoreTransferClick" class="com.extrabux.tests.TrackingTicketTests"/>
+      </group> <!-- production-test -->
+    </groups>
+    <test name="Ticket Tests" duration-ms="23284" started-at="2017-10-13T09:11:42Z" finished-at="2017-10-13T09:12:05Z">
+      <class name="com.extrabux.tests.TrackingTicketTests">
+        <test-method status="PASS" signature="loadPropertiesConfig()[pri:0, instance:com.extrabux.tests.TrackingTicketTests@617faa95]" name="loadPropertiesConfig" is-config="true" duration-ms="6" started-at="2017-10-13T17:11:42Z" depends-on-methods="com.extrabux.tests.BaseTest.getPropertiesFileName" finished-at="2017-10-13T17:11:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPropertiesConfig -->
+        <test-method status="PASS" signature="getBrowserType(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.TrackingTicketTests@617faa95]" name="getBrowserType" is-config="true" duration-ms="0" started-at="2017-10-13T17:11:42Z" finished-at="2017-10-13T17:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7d7758be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowserType -->
+        <test-method status="PASS" signature="getPropertiesFileName(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.TrackingTicketTests@617faa95]" name="getPropertiesFileName" is-config="true" duration-ms="0" started-at="2017-10-13T17:11:42Z" finished-at="2017-10-13T17:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7d7758be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPropertiesFileName -->
+        <test-method status="PASS" signature="getServerName(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.TrackingTicketTests@617faa95]" name="getServerName" is-config="true" duration-ms="0" started-at="2017-10-13T17:11:42Z" finished-at="2017-10-13T17:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7d7758be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getServerName -->
+        <test-method status="PASS" signature="setIntialLanguage(org.testng.ITestContext)[pri:0, instance:com.extrabux.tests.TrackingTicketTests@617faa95]" name="setIntialLanguage" is-config="true" duration-ms="2" started-at="2017-10-13T17:11:42Z" depends-on-methods="com.extrabux.tests.BaseTest.getBrowserType" finished-at="2017-10-13T17:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7d7758be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setIntialLanguage -->
+        <test-method status="PASS" signature="logTestStart(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.TrackingTicketTests@617faa95]" name="logTestStart" is-config="true" duration-ms="1" started-at="2017-10-13T17:11:43Z" finished-at="2017-10-13T17:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.TrackingTicketTests.testStoreTransferClick(org.openqa.selenium.WebDriver) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStart -->
+        <test-method status="FAIL" signature="testStoreTransferClick(org.openqa.selenium.WebDriver)[pri:0, instance:com.extrabux.tests.TrackingTicketTests@617faa95]" name="testStoreTransferClick" duration-ms="20661" started-at="2017-10-13T17:11:43Z" data-provider="getWebDriver" finished-at="2017-10-13T17:12:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FirefoxDriver: firefox on MAC (null)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[currentPage title: Ebates海淘返利网 - 海淘优惠更新超快的返利网
+ currentPage url: https://staging-current.ebates.cn/
+timed out waiting for member to display. element was not found on current page (https://staging-current.ebates.cn/).  possible white page displayed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: currentPage title: Ebates海淘返利网 - 海淘优惠更新超快的返利网
+ currentPage url: https://staging-current.ebates.cn/
+timed out waiting for member to display. element was not found on current page (https://staging-current.ebates.cn/).  possible white page displayed
+	at com.extrabux.tests.TrackingTicketTests.testStoreTransferClick(TrackingTicketTests.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href="./Extrabux Tracking Ticket Tests/screenshots/testStoreTransferClick.png">testStoreTransferClick Screenshot</a> | ]]>
+            </line>
+            <line>
+              <![CDATA[<a href="./Extrabux Tracking Ticket Tests/html/testStoreTransferClick.html">testStoreTransferClick HTML Output</a> | ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testStoreTransferClick -->
+        <test-method status="PASS" signature="logTestFinish(java.lang.reflect.Method)[pri:0, instance:com.extrabux.tests.TrackingTicketTests@617faa95]" name="logTestFinish" is-config="true" duration-ms="0" started-at="2017-10-13T17:12:05Z" finished-at="2017-10-13T17:12:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.extrabux.tests.TrackingTicketTests.testStoreTransferClick(org.openqa.selenium.WebDriver) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestFinish -->
+      </class> <!-- com.extrabux.tests.TrackingTicketTests -->
+    </test> <!-- Ticket Tests -->
+  </suite> <!-- Extrabux Tracking Ticket Tests -->
+  <suite name="Extrabux Integration Test Suite" duration-ms="0" started-at="2017-10-13T09:12:05Z" finished-at="2017-10-13T09:12:05Z">
+    <groups>
+    </groups>
+  </suite> <!-- Extrabux Integration Test Suite -->
+</testng-results>

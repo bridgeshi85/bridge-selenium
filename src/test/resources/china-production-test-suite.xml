@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Production Test Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+	 <parameter name="serverName" value="www.ebates.cn"/>
+	<!--<parameter name="runOnSaucelabs" value="true"/>-->
+	<parameter name="promotionBox" value="false"/>
+	<parameter name="allBrowsers" value="false"/>
+	<parameter name="useLanguage" value="zh-cn"/>
+	<parameter name="consoleErrorLog" value="true"/>
+	<test name="Production Tests">
+		<groups>
+			<run>
+				<include name="production-test"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.extrabux.tests.cn.ChinaLoginTests" />
+			<!--  <class name="com.extrabux.tests.cn.ChinaSignUpTests" />-->
+			<class name="com.extrabux.tests.cn.ChinaPromotionTests" />
+			<class name="com.extrabux.tests.cn.ChinaTrackingTicketTests" />
+			<class name="com.extrabux.tests.cn.ChinaHomePageTests" />
+			<class name="com.extrabux.tests.api.ApiTests" />
+		</classes>
+	</test>
+</suite>

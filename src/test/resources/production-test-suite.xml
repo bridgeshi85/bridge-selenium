@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Production Test Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+	<!-- parameter name="serverName" value="staging-current.extrabux.com"/> -->
+	<!--  <parameter name="runOnSaucelabs" value="true"/>-->
+	<parameter name="useLanguage" value="en"/>
+	<parameter name="allBrowsers" value="false"/>
+	<test name="Production Tests">
+		<groups>
+			<run>
+				<include name="production-test"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.extrabux.tests.LoginTests" />
+			<class name="com.extrabux.tests.SignUpTests" />
+			<class name="com.extrabux.tests.TrackingTicketTests" />
+		</classes>
+	</test>
+</suite>

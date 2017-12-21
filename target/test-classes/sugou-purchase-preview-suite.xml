@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Selenium Suigou Purchase Preview Tests" verbose="1">
+    <listeners>
+      <listener class-name="com.extrabux.listeners.ScreenshotListener" />
+    </listeners>
+    <!-- <parameter name="daigouServer" value="dev-sugou.extrabux.com" /> -->
+    <test name="Sugou Purchase Preview Tests">
+      <classes>
+        <class name="com.extrabux.tests.daigou.PurchasePreviewTests">
+            <!-- <methods>
+                <include name="updateProductOptions" />
+            </methods> -->
+        </class>
+      </classes>
+    </test>
+</suite> 

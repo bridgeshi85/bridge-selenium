@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Account Tests" verbose="1">
+	<!-- <listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners> -->
+	<!-- <parameter name="serverName" value="extrabux.com"/> -->
+	<parameter name="serverName" value="wenda-local.extrabux.com"/>
+	<parameter name="useLanguage" value="zh-cn"/>
+	<test name="Account Tests">
+		<classes>
+			<class name="com.extrabux.tests.cn.qa.QAndATests" >
+			<methods>
+				<include name ="testReplyQuery"/>
+			</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

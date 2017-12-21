@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Search Tests" verbose="1">
+	<listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+	<!--  <parameter name="serverName" value="www.extrabux.com"/>-->
+	<parameter name="propertiesFileName" value="staging-test.properties" />
+	<parameter name="useLanguage" value="zh-cn"/>
+	<test name="Search Tests">
+		<classes>
+			<class name="com.extrabux.tests.cn.ChinaSearchTests" >
+				<!--  <methods>
+					<include name="searchCoupon"></include>
+				</methods>-->
+			</class>
+		</classes>
+	</test>
+</suite>

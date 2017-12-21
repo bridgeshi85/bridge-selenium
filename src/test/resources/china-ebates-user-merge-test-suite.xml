@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Extrabux Selenium Account Merge Tests" verbose="1">
+	<!--  <listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+   	<parameter name="allBrowsers" value="false"/>
+   	<parameter name="promotionBox" value="false"/>
+	<parameter name="serverName" value="staging-current.extrabux.com"/>
+	<parameter name="propertiesFileName" value="staging-test.properties" />
+	<parameter name="useLanguage" value="zh-cn"/>-->
+	<test name="Account Merge Tests">
+		<classes>
+			<class name="com.extrabux.tests.cn.ChinaUserMergeTests">
+			    <!--  <methods>
+			        <include name ="shipperPromotionDraw"/>
+			    </methods>-->
+			</class>
+		</classes>
+	</test>
+</suite>

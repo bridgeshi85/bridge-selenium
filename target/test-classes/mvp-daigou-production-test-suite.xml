@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MVP Daigou Production Test Suite" verbose="1">
+	 <listeners>
+		<listener class-name="com.extrabux.listeners.ScreenshotListener" />
+	</listeners>
+   	<parameter name="allBrowsers" value="false"/>
+   	<parameter name="serverName" value="haitao.extrabux.com"/> 
+   	<parameter name="propertiesFileName" value="mvp-daigou.properties" />
+	<parameter name="useLanguage" value="zh-cn"/>
+	<test name="Mvp Production Test">
+		<groups>
+			<run>
+				<include name="production-test"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.extrabux.tests.cn.mvp.SignUpAndSignInTests" />
+			<class name="com.extrabux.tests.cn.mvp.ShoppingCartTests" />
+			<class name="com.extrabux.tests.cn.mvp.OrderPreviewTests" />
+		</classes>
+	</test>
+</suite>

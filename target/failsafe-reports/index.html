@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">4 suites, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Extrabux_Selenium_Login_Tests">
+              <span class="suite-name border-failed">Extrabux Selenium Login Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Extrabux_Selenium_Login_Tests">
+                    <span>login-suite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Extrabux_Selenium_Login_Tests">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Extrabux_Selenium_Login_Tests">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Extrabux_Selenium_Login_Tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Extrabux_Selenium_Login_Tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Extrabux_Selenium_Login_Tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Extrabux_Selenium_Login_Tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Extrabux_Selenium_Login_Tests" class="hide-methods failed suite-Extrabux_Selenium_Login_Tests"> (hide)</a> <!-- hide-methods failed suite-Extrabux_Selenium_Login_Tests -->
+                      <a href="#" panel-name="suite-Extrabux_Selenium_Login_Tests" class="show-methods failed suite-Extrabux_Selenium_Login_Tests"> (show)</a> <!-- show-methods failed suite-Extrabux_Selenium_Login_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Extrabux_Selenium_Login_Tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extrabux_Selenium_Login_Tests" title="com.extrabux.tests.LoginTests" hash-for-method="loginSuccess(FirefoxDriver: firefox on MAC (null))">loginSuccess(FirefoxDriver: firefox on MAC (null))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Extrabux_Selenium_Login_Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Extrabux_Selenium_Sign_Up_Tests">
+              <span class="suite-name border-passed">Extrabux Selenium Sign Up Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Extrabux_Selenium_Sign_Up_Tests">
+                    <span>signup-suite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Extrabux_Selenium_Sign_Up_Tests">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Extrabux_Selenium_Sign_Up_Tests">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Extrabux_Selenium_Sign_Up_Tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Extrabux_Selenium_Sign_Up_Tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Extrabux_Selenium_Sign_Up_Tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Extrabux_Selenium_Sign_Up_Tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Extrabux_Selenium_Sign_Up_Tests" class="hide-methods passed suite-Extrabux_Selenium_Sign_Up_Tests"> (hide)</a> <!-- hide-methods passed suite-Extrabux_Selenium_Sign_Up_Tests -->
+                      <a href="#" panel-name="suite-Extrabux_Selenium_Sign_Up_Tests" class="show-methods passed suite-Extrabux_Selenium_Sign_Up_Tests"> (show)</a> <!-- show-methods passed suite-Extrabux_Selenium_Sign_Up_Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-Extrabux_Selenium_Sign_Up_Tests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extrabux_Selenium_Sign_Up_Tests" title="com.extrabux.tests.SignUpTests" hash-for-method="signUpSuccessNoReferral(FirefoxDriver: firefox on MAC (null))">signUpSuccessNoReferral(FirefoxDriver: firefox on MAC (null))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Extrabux_Selenium_Sign_Up_Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Extrabux_Tracking_Ticket_Tests">
+              <span class="suite-name border-failed">Extrabux Tracking Ticket Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Extrabux_Tracking_Ticket_Tests">
+                    <span>ticket-suite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Extrabux_Tracking_Ticket_Tests">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Extrabux_Tracking_Ticket_Tests">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Extrabux_Tracking_Ticket_Tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Extrabux_Tracking_Ticket_Tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Extrabux_Tracking_Ticket_Tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Extrabux_Tracking_Ticket_Tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Extrabux_Tracking_Ticket_Tests" class="hide-methods failed suite-Extrabux_Tracking_Ticket_Tests"> (hide)</a> <!-- hide-methods failed suite-Extrabux_Tracking_Ticket_Tests -->
+                      <a href="#" panel-name="suite-Extrabux_Tracking_Ticket_Tests" class="show-methods failed suite-Extrabux_Tracking_Ticket_Tests"> (show)</a> <!-- show-methods failed suite-Extrabux_Tracking_Ticket_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Extrabux_Tracking_Ticket_Tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Extrabux_Tracking_Ticket_Tests" title="com.extrabux.tests.TrackingTicketTests" hash-for-method="testStoreTransferClick(FirefoxDriver: firefox on MAC (null))">testStoreTransferClick(FirefoxDriver: firefox on MAC (null))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Extrabux_Tracking_Ticket_Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Extrabux_Selenium_Login_Tests" class="panel Extrabux_Selenium_Login_Tests">
+          <div class="suite-Extrabux_Selenium_Login_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.extrabux.tests.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginSuccess(FirefoxDriver: firefox on MAC (null))">
+                  </a> <!-- loginSuccess(FirefoxDriver: firefox on MAC (null)) -->
+                  <span class="method-name">loginSuccess</span>
+                  <span class="parameters">(FirefoxDriver: firefox on MAC (null))</span>
+                  <div class="stack-trace">java.lang.Exception: currentPage title: Ebates海淘返利网 - 海淘优惠更新超快的返利网
+ currentPage url: https://staging-current.ebates.cn/
+timed out waiting for member to display. element was not found on current page (https://staging-current.ebates.cn/).  possible white page displayed
+	at com.extrabux.tests.LoginTests.loginSuccess(LoginTests.java:31)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extrabux_Selenium_Login_Tests-class-failed -->
+        </div> <!-- panel Extrabux_Selenium_Login_Tests -->
+        <div panel-name="suite-Extrabux_Selenium_Sign_Up_Tests" class="panel Extrabux_Selenium_Sign_Up_Tests">
+          <div class="suite-Extrabux_Selenium_Sign_Up_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.extrabux.tests.SignUpTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpSuccessNoReferral(FirefoxDriver: firefox on MAC (null))">
+                  </a> <!-- signUpSuccessNoReferral(FirefoxDriver: firefox on MAC (null)) -->
+                  <span class="method-name">signUpSuccessNoReferral</span>
+                  <span class="parameters">(FirefoxDriver: firefox on MAC (null))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extrabux_Selenium_Sign_Up_Tests-class-passed -->
+        </div> <!-- panel Extrabux_Selenium_Sign_Up_Tests -->
+        <div panel-name="suite-Extrabux_Tracking_Ticket_Tests" class="panel Extrabux_Tracking_Ticket_Tests">
+          <div class="suite-Extrabux_Tracking_Ticket_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.extrabux.tests.TrackingTicketTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStoreTransferClick(FirefoxDriver: firefox on MAC (null))">
+                  </a> <!-- testStoreTransferClick(FirefoxDriver: firefox on MAC (null)) -->
+                  <span class="method-name">testStoreTransferClick</span>
+                  <span class="parameters">(FirefoxDriver: firefox on MAC (null))</span>
+                  <div class="stack-trace">java.lang.Exception: currentPage title: Ebates海淘返利网 - 海淘优惠更新超快的返利网
+ currentPage url: https://staging-current.ebates.cn/
+timed out waiting for member to display. element was not found on current page (https://staging-current.ebates.cn/).  possible white page displayed
+	at com.extrabux.tests.TrackingTicketTests.testStoreTransferClick(TrackingTicketTests.java:62)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Extrabux_Tracking_Ticket_Tests-class-failed -->
+        </div> <!-- panel Extrabux_Tracking_Ticket_Tests -->
+        <div panel-name="suite-Extrabux_Integration_Test_Suite" class="panel Extrabux_Integration_Test_Suite">
+        </div> <!-- panel Extrabux_Integration_Test_Suite -->
+        <div panel-name="test-xml-Extrabux_Selenium_Login_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/bridge/WorkSpace/selenium-test/src/test/resources/login-suite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Extrabux Selenium Login Tests&quot;&gt;
+  &lt;test name=&quot;Login Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.extrabux.tests.LoginTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Tests --&gt;
+&lt;/suite&gt; &lt;!-- Extrabux Selenium Login Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Extrabux_Selenium_Sign_Up_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/bridge/WorkSpace/selenium-test/src/test/resources/signup-suite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Extrabux Selenium Sign Up Tests&quot;&gt;
+  &lt;test name=&quot;Sign Up Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.extrabux.tests.SignUpTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sign Up Tests --&gt;
+&lt;/suite&gt; &lt;!-- Extrabux Selenium Sign Up Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Extrabux_Tracking_Ticket_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/bridge/WorkSpace/selenium-test/src/test/resources/ticket-suite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Extrabux Tracking Ticket Tests&quot;&gt;
+  &lt;test name=&quot;Ticket Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.extrabux.tests.TrackingTicketTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Ticket Tests --&gt;
+&lt;/suite&gt; &lt;!-- Extrabux Tracking Ticket Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Extrabux_Integration_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/bridge/WorkSpace/selenium-test/src/test/resources/integration-test-suite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Extrabux Integration Test Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.extrabux.listeners.ScreenshotListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;login-suite.xml&quot;/&gt;
+    &lt;suite-file path=&quot;signup-suite.xml&quot;/&gt;
+    &lt;suite-file path=&quot;ticket-suite.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- Extrabux Integration Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Extrabux_Selenium_Login_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Extrabux Selenium Login Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Extrabux_Selenium_Sign_Up_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Extrabux Selenium Sign Up Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Sign Up Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Extrabux_Tracking_Ticket_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Extrabux Tracking Ticket Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Ticket Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Extrabux_Integration_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Extrabux Integration Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Extrabux_Selenium_Login_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Extrabux Selenium Login Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">production-test</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginSuccess</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">signUpSuccessNoReferral</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testStoreTransferClick</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Extrabux_Selenium_Sign_Up_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Extrabux Selenium Sign Up Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">production-test</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginSuccess</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">signUpSuccessNoReferral</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testStoreTransferClick</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Extrabux_Tracking_Ticket_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Extrabux Tracking Ticket Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">production-test</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginSuccess</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">signUpSuccessNoReferral</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testStoreTransferClick</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Extrabux_Integration_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Extrabux Integration Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Extrabux_Selenium_Login_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Extrabux Selenium Login Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Extrabux_Selenium_Login_Tests');
+function tableData_Extrabux_Selenium_Login_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginSuccess')
+data.setCell(0, 2, 'com.extrabux.tests.LoginTests')
+data.setCell(0, 3, 23731);
+window.suiteTableData['Extrabux_Selenium_Login_Tests']= { tableData: data, tableDiv: 'times-div-Extrabux_Selenium_Login_Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <div id="times-div-Extrabux_Selenium_Login_Tests">
+              </div> <!-- times-div-Extrabux_Selenium_Login_Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Extrabux_Selenium_Sign_Up_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Extrabux Selenium Sign Up Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Extrabux_Selenium_Sign_Up_Tests');
+function tableData_Extrabux_Selenium_Sign_Up_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'signUpSuccessNoReferral')
+data.setCell(0, 2, 'com.extrabux.tests.SignUpTests')
+data.setCell(0, 3, 7538);
+window.suiteTableData['Extrabux_Selenium_Sign_Up_Tests']= { tableData: data, tableDiv: 'times-div-Extrabux_Selenium_Sign_Up_Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-Extrabux_Selenium_Sign_Up_Tests">
+              </div> <!-- times-div-Extrabux_Selenium_Sign_Up_Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Extrabux_Tracking_Ticket_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Extrabux Tracking Ticket Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Extrabux_Tracking_Ticket_Tests');
+function tableData_Extrabux_Tracking_Ticket_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testStoreTransferClick')
+data.setCell(0, 2, 'com.extrabux.tests.TrackingTicketTests')
+data.setCell(0, 3, 20661);
+window.suiteTableData['Extrabux_Tracking_Ticket_Tests']= { tableData: data, tableDiv: 'times-div-Extrabux_Tracking_Ticket_Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <div id="times-div-Extrabux_Tracking_Ticket_Tests">
+              </div> <!-- times-div-Extrabux_Tracking_Ticket_Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Extrabux_Integration_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Extrabux Integration Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Extrabux_Integration_Test_Suite');
+function tableData_Extrabux_Integration_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['Extrabux_Integration_Test_Suite']= { tableData: data, tableDiv: 'times-div-Extrabux_Integration_Test_Suite'}
+return data;
+}
+              </script>
+              <div id="times-div-Extrabux_Integration_Test_Suite">
+              </div> <!-- times-div-Extrabux_Integration_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Extrabux_Selenium_Login_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Extrabux Selenium Login Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginSuccess(FirefoxDriver: firefox on MAC (null))</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href="./Extrabux Selenium Login Tests/screenshots/loginSuccess.png">loginSuccess Screenshot</a> | </span>
+                <span class="reporter-method-output"><a href="./Extrabux Selenium Login Tests/html/loginSuccess.html">loginSuccess HTML Output</a> | </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Extrabux_Selenium_Sign_Up_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Extrabux Selenium Sign Up Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Extrabux_Tracking_Ticket_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Extrabux Tracking Ticket Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testStoreTransferClick(FirefoxDriver: firefox on MAC (null))</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href="./Extrabux Tracking Ticket Tests/screenshots/testStoreTransferClick.png">testStoreTransferClick Screenshot</a> | </span>
+                <span class="reporter-method-output"><a href="./Extrabux Tracking Ticket Tests/html/testStoreTransferClick.html">testStoreTransferClick HTML Output</a> | </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Extrabux_Integration_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Extrabux Integration Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Extrabux_Selenium_Login_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Extrabux_Selenium_Sign_Up_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Extrabux_Tracking_Ticket_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Extrabux_Integration_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Extrabux_Selenium_Login_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.extrabux.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">getBrowserType(org.testng.TestRunner@4a07d605)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getPropertiesFileName(org.testng.TestRunner@4a07d605)</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getServerName(org.testng.TestRunner@4a07d605)</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">loadPropertiesConfig</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setIntialLanguage(org.testng.TestRunner@4a07d605)</span>
+                <span class="method-start">130 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">logTestStart(public void com.extrabux.tests.LoginTests.loginSuccess(org.openqa.selenium.WebDriver) throws java.la...)</span>
+                <span class="method-start">2397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginSuccess(FirefoxDriver: firefox on MAC (null))</span>
+                <span class="method-start">2400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logTestFinish(public void com.extrabux.tests.LoginTests.loginSuccess(org.openqa.selenium.WebDriver) throws java.la...)</span>
+                <span class="method-start">27135 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Extrabux_Selenium_Sign_Up_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.extrabux.tests.SignUpTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">getBrowserType(org.testng.TestRunner@74287ea3)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getPropertiesFileName(org.testng.TestRunner@74287ea3)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getServerName(org.testng.TestRunner@74287ea3)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">loadPropertiesConfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setIntialLanguage(org.testng.TestRunner@74287ea3)</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">logTestStart(public void com.extrabux.tests.SignUpTests.signUpSuccessNoReferral(org.openqa.selenium.WebDriver) th...)</span>
+                <span class="method-start">1902 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signUpSuccessNoReferral(FirefoxDriver: firefox on MAC (null))</span>
+                <span class="method-start">1902 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logTestFinish(public void com.extrabux.tests.SignUpTests.signUpSuccessNoReferral(org.openqa.selenium.WebDriver) th...)</span>
+                <span class="method-start">9524 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Extrabux_Tracking_Ticket_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.extrabux.tests.TrackingTicketTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">getBrowserType(org.testng.TestRunner@7d7758be)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getPropertiesFileName(org.testng.TestRunner@7d7758be)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getServerName(org.testng.TestRunner@7d7758be)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">loadPropertiesConfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setIntialLanguage(org.testng.TestRunner@7d7758be)</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">logTestStart(public void com.extrabux.tests.TrackingTicketTests.testStoreTransferClick(org.openqa.selenium.WebDri...)</span>
+                <span class="method-start">1839 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testStoreTransferClick(FirefoxDriver: firefox on MAC (null))</span>
+                <span class="method-start">1840 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logTestFinish(public void com.extrabux.tests.TrackingTicketTests.testStoreTransferClick(org.openqa.selenium.WebDri...)</span>
+                <span class="method-start">23284 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Extrabux_Integration_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
