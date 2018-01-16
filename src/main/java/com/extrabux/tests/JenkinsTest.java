@@ -21,7 +21,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestNGMethod;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -34,7 +33,6 @@ import com.extrabux.pages.LoginPage;
 import com.extrabux.pages.SignUpPage;
 import com.extrabux.webdriver.Capability;
 import com.extrabux.webdriver.SeleniumConfig;
-import com.saucelabs.saucerest.SauceREST;
 import com.thoughtworks.xstream.XStream;
 
 public class JenkinsTest {
@@ -70,28 +68,6 @@ public class JenkinsTest {
 	}
 
 	// TODO move this into a listener
-	@AfterMethod
-	public void cleanupDriver(ITestResult result) {
-		// find the method param and close it if its still open
-		Object[] methodParams= result.getParameters();
-		WebDriver driver = getDriverParam(methodParams);
-
-		if (driver != null) {
-			// right now allBrowsers is kind like runOnSauceLabs
-			// TODO consider doing this differently.
-			if (allBrowsers) {
-				SauceREST client = new SauceREST(sauceUsername, sauceAccessKey);
-				String sessionId = ((RemoteWebDriver) driver).getSessionId().toString();
-				if (result.isSuccess()) {
-					client.jobPassed(sessionId);
-				} else {
-					client.jobFailed(sessionId);
-				}
-			}
-			//driver.close();
-			driver.quit();
-		}
-	}
 
 	@DataProvider(name = "getWebDriver")
 	public Object[][] getDriver(ITestContext testNGContext, ITestNGMethod method) throws Exception {

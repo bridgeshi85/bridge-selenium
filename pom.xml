@@ -14,13 +14,6 @@
 		<maven-failsafe-version>2.16</maven-failsafe-version>
 		<suite>integration-test</suite>
 	</properties>
-  
-    <repositories>
-        <repository>
-            <id>Sauce Maven Repository</id>
-            <url>https://repository-saucelabs.forge.cloudbees.com/release</url>
-        </repository>
-    </repositories>
 
 	<dependencies>
 		<dependency>
@@ -37,12 +30,7 @@
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
 			<version>1.4.5</version>
-		</dependency>
-		<dependency>
-			<groupId>com.saucelabs</groupId>
-			<artifactId>saucerest</artifactId>
-			<version>1.0.7</version>
-		</dependency>		
+		</dependency>	
 		<dependency>
 			<groupId>commons-configuration</groupId>
 			<artifactId>commons-configuration</artifactId>
